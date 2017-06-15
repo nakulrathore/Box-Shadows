@@ -1,0 +1,15 @@
+{
+  "short_name": "Box Shadows",
+  "name": "HTML Box Shadows for Developers & Designers",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#777777",
+  "background_color": "#ffffff"
+}
