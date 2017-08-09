@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './App.css';
 
-var jsonData = require('./shadows.json');
-var jsonDataBG = require('./backgrounds.json');
+// var jsonData = require('./shadows.json');
+// var jsonDataBG = require('./backgrounds.json');
 
 
 const GoogleBar = (props) =>{
@@ -16,8 +17,8 @@ const GoogleBar = (props) =>{
         <div className="searchicon">
           <span className="voiceicon"></span>
         </div>
-        
-      </div>  
+
+      </div>
     );
 }
 
@@ -41,13 +42,23 @@ const Bloc = props => {
 };
 
 class ColorButts extends Component {
-  state = { background: '#FAFAFA' };
+  state = { background: '#FAFAFA', bgit: [] };
 
   changrBG = (bg) => {
     this.setState({
       background: bg
     });
     }
+   componentDidMount(){
+    axios
+      .get('https://raw.githubusercontent.com/nakulrathore/Box-Shadows/master/src/backgrounds.json')
+      .then(({ data })=> {
+      	this.setState({ 
+          bgit: data
+        });
+      })
+      .catch((err)=> {})
+  }
 
 
   render() {
@@ -55,9 +66,9 @@ class ColorButts extends Component {
     return (
       <ul className="ColorButts">
         change background :
-        {jsonDataBG.map((anObjectMapped, index) => {
+        {this.state.bgit.map((anObjectMapped, index) => {
           return (
-            <li key={index} 
+            <li key={index}
               onClick={this.changrBG.bind(this, anObjectMapped.color)}
               bgvalue={anObjectMapped.color}
               className={ this.state.background === anObjectMapped.color ? 'selected' : '' }
@@ -72,12 +83,26 @@ class ColorButts extends Component {
 }
 
 class App extends Component {
+  
+    state = { shadowit: []};
+  
+  componentDidMount(){
+    axios
+      .get('https://raw.githubusercontent.com/nakulrathore/Box-Shadows/master/src/shadows.json')
+      .then(({ data })=> {
+      	this.setState({ 
+          shadowit: data
+        });
+      })
+      .catch((err)=> {})
+  }
+  
   render() {
     return (
       <div >
         <GoogleBar/>
         <div className="app">
-        {jsonData.map((anObjectMapped, index) => {
+        {this.state.shadowit.map((anObjectMapped, index) => {
           return (
             <Bloc
               shadow={anObjectMapped.shadow}

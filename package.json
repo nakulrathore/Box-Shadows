@@ -5,7 +5,8 @@
   "dependencies": {
     "json-loader": "^0.5.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "axios": "^0.16.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
