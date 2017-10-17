@@ -1,4 +1,6 @@
- .bloc{
+
+
+.bloc{
   width:320px;
   height:190px;
   display:inline-block;
@@ -13,6 +15,34 @@
   text-align:left;
 
 }
+.title{
+  text-align: center;
+  margin: 10px auto;
+  color: #444;
+}
+.subtitle{
+  font-size: 14px;
+  color: #777;
+}
+.addnew{
+  font-size: 12px;
+  text-decoration: none;
+  color: #3498db;
+  padding: 5px;
+
+}
+.addnew:hover{
+
+  border-bottom:1px solid #3498db; 
+}
+.addnewplus{
+  font-size: 21px;
+  vertical-align: sub;
+}
+h1{
+  margin-bottom:0;
+}
+
 h2{
   font-weight:normal;
   user-select: none;
@@ -20,6 +50,7 @@ h2{
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
+  display: inline-block;
 
 }
 p{
@@ -29,18 +60,49 @@ p{
   position:absolute;
   bottom:10px;
   left:10px;
+  width: 95%;
 
 }
 .ColorButts{
-  list-style-type:none;
-  position:fixed;
-  right:0px;
-  bottom:0px;
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  right: 0px;
+  text-align: right;
+  bottom: 0px;
   font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  display: block;
+  background: rgba(189, 195, 199,0.3);
+  margin: 0;
+  padding: 10px;
+}
+.copyButt{
+  cursor: pointer;
+  background-color: #fafafa;
+  padding: 5px;
+  margin: 5px 5px 5px 0;
+  border-radius: 3px;
 
-  font-size:12px;
 
-
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.copyButtdone{
+  cursor: pointer;
+  background-color: rgba(46, 204, 113,0.5);
+  padding: 5px;
+  margin: 5px 5px 5px 0;
+  border-radius: 3px;
+}
+.copyButt:hover{
+  background-color: #eee;
+}
+.copyButtred{
+  background-color: red;
 }
 .ColorButts li{
   padding:5px 8px;
@@ -116,6 +178,26 @@ body{
 }
 
 .app{
-text-align: center;
-margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.googlebarcode{
+  font-size: 10px;
+}
+
+
+@media only screen and (max-width: 350px) {
+  .bloc{
+    width:250px;
+  }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  .googlebarcode{
+    display: none;
+  }
+
+
 }
