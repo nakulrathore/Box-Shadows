@@ -186,9 +186,11 @@ body{
 }
 
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .bloc{
-    width:250px;
+    width:270px;
+    margin:30px auto;
+
   }
 
 }
