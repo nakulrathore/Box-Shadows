@@ -95,5 +95,10 @@
 		"name": "LinkedIn Post",
 		"shadow": "0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2)",
 		"border": "0"
+	},
+	{
+		"name": "Digital Ocean",
+		"shadow": "0 2px 4px rgba(3,27,78,.06)",
+		"border": "1px solid #e5e8ed"
 	}
 ]
