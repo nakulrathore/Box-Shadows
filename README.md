@@ -35,7 +35,13 @@ All the Box-Shadows are loaded in a single file : [shadows.js](https://github.co
 
 
 
+
+
+-----
+
  **Method 2. (Fork)**
+ 
+ 
  [1] Fork this repo
  
  [2] Make changes in `src/shadows.js` 
