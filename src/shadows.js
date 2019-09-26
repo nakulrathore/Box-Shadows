@@ -106,6 +106,11 @@ const shadows = [
 		"shadow": "0 1px 1px rgba(97,127,152,.2), 1px 0 0 rgba(97,127,152,.1), -1px 0 0 rgba(97,127,152,.1)",
 		"border": "0"
 	},
+	{
+		"name": "Chat Button Widget Shadow",
+		"shadow": "0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2)",
+		"border": "0"
+	}
 ]
 
 
