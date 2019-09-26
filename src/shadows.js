@@ -100,7 +100,12 @@ const shadows = [
 		"name": "Digital Ocean",
 		"shadow": "0 2px 4px rgba(3,27,78,.06)",
 		"border": "1px solid #e5e8ed"
-	}
+	},
+	{
+		"name": "Telegram login",
+		"shadow": "0 1px 1px rgba(97,127,152,.2), 1px 0 0 rgba(97,127,152,.1), -1px 0 0 rgba(97,127,152,.1)",
+		"border": "0"
+	},
 ]
 
 
