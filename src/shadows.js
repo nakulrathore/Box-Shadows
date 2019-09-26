@@ -1,4 +1,4 @@
-[
+const shadows = [
 
 	{
 		"name": "Google docs",
@@ -102,3 +102,6 @@
 		"border": "1px solid #e5e8ed"
 	}
 ]
+
+
+export default shadows;
