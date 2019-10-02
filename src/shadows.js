@@ -111,6 +111,11 @@ const shadows = [
 		"shadow": "0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2)",
 		"border": "0"
 	},
+	{
+		"name": "A Nice Simple Shadow",
+		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
+		"border": "0"
+	},
 ]
 
 
