@@ -115,8 +115,7 @@ const shadows = [
 		"name": "A Nice Simple Shadow",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "0"
-	}
-	
+	},
 ]
 
 
