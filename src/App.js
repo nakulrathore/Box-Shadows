@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Color from "color";
 
 //Module Imports
 import "./App.css";
@@ -131,12 +132,17 @@ class ColorButts extends Component {
       <ul className="ColorButts">
         change background :
         {backgroundColors.map((bg, index) => {
+          const colorButtsStyle = {
+            background: bg.color,
+            color: Color(bg.color).isDark() ? "#FFF" : "#000"
+          };
+
           return (
             <li
               key={index}
               onClick={this.changeBackground.bind(this, bg.color)}
-              bgvalue={bg.color}
               className={this.state.background === bg.color ? "selected" : ""}
+              style={colorButtsStyle}
             >
               {bg.color}
             </li>
