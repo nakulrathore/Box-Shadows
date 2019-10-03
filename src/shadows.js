@@ -127,6 +127,21 @@ const shadows = [
 		"shadow": "4px 12px 47px 0 rgba(0,0,0,.1)",
 		"border": "0"
 	},
+	{
+		"name": "Github button",
+		"shadow": "0 0 0 .2em rgba(3,102,214,.3)",
+		"border": "0"
+	},
+	{
+		"name": "Box shadow for rounded boxes with white background",
+		"shadow": "0px 3px 8px 0 rgba(219, 219, 219, 0.56)",
+		"border": "0"
+	},
+	{
+		"name": "Shadow for colored box labels",
+		"shadow": "1px 1px 2px #e5e5e5",
+		"border": "0"
+	},
 ]
 
 
