@@ -141,7 +141,7 @@ const shadows = [
 		"name": "Shadow for colored box labels",
 		"shadow": "1px 1px 2px #e5e5e5",
 		"border": "0"
-	}
+	},
 ]
 
 
