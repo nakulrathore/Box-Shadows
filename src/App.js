@@ -9,6 +9,8 @@ import "./App.css";
 //Data Imports
 import backgroundColors from "./backgrounds";
 import shadows from "./shadows";
+import PageFooter from "./components/PageFooter/PageFooter";
+import ColorList from "./components/ColorList/ColorList";
 
 
 class App extends Component {
@@ -23,6 +25,9 @@ class App extends Component {
   render() {
     const { background } = this.state;
     document.body.style.backgroundColor = background;
+
+    const isDarkBackground = Color(background).isDark();
+
     return (
       <div>
         <Title isDarkBackground={Color(background).isDark()}/>
@@ -32,7 +37,16 @@ class App extends Component {
             return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
           })}
         </div>
-        <ColorButts background={background} onChangeBackground={this.handleOnChangeBackground}/>
+
+        <PageFooter isDarkColorSelected={isDarkBackground}
+                    title={'change background :'}
+        >
+          <ColorList colors={backgroundColors}
+                     selectedColor={background}
+                     isDarkColorSelected={isDarkBackground}
+                     onColorChange={this.handleOnChangeBackground}
+          />
+        </PageFooter>
       </div>
     );
   }
@@ -126,31 +140,6 @@ class Bloc extends Component {
       </div>
     );
   }
-}
-
-const ColorButts = ({ background, onChangeBackground }) => {
-  return (
-    <ul className="ColorButts">
-      change background :
-      {backgroundColors.map((bg, index) => {
-        const colorButtsStyle = {
-          background: bg.color,
-          color: Color(bg.color).isDark() ? "#FFF" : "#000"
-        };
-        console.log(background, bg.color)
-        return (
-          <li
-            key={index}
-            onClick={()=>onChangeBackground(bg.color)}
-            className={background === bg.color ? "selected" : ""}
-            style={colorButtsStyle}
-          >
-            {bg.color}
-          </li>
-        );
-      })}
-    </ul>
-  );
 }
 
 export default App;
