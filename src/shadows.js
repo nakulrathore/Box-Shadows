@@ -142,6 +142,11 @@ const shadows = [
 		"shadow": "1px 1px 2px #e5e5e5",
 		"border": "0"
 	},
+	{
+		"name": "spotify login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"border": "0"
+	},
 ]
 
 
