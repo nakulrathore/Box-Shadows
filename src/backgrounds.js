@@ -25,6 +25,15 @@ const backgrounds = [
   },
   {
     color: "#282828"
+  },
+  {
+    color: "#FBEEC1"
+  },
+  {
+    color: "#EDF5E1"
+  },
+  {
+    color: "#F2E1EE"
   }
 ];
 
