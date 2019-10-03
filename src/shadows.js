@@ -92,7 +92,7 @@ const shadows = [
 		"border": "0"
 	},
 	{
-		"name": "Chat Button Widget Shadow",
+		"name": "Chat Button Widget",
 		"shadow": "0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2)",
 		"border": "0"
 	},
@@ -107,7 +107,7 @@ const shadows = [
 		"border": "0"
 	},
 	{
-		"name": "Android 10 Highlights Box Shadow",
+		"name": "Android 10 Highlights",
 		"shadow": "4px 12px 47px 0 rgba(0,0,0,.1)",
 		"border": "0"
 	},
@@ -117,17 +117,17 @@ const shadows = [
 		"border": "0"
 	},
 	{
-		"name": "Box shadow for rounded boxes with white background",
+		"name": "Rounded Box",
 		"shadow": "0px 3px 8px 0 rgba(219, 219, 219, 0.56)",
 		"border": "0"
 	},
 	{
-		"name": "Shadow for colored box labels",
+		"name": "colored box labels",
 		"shadow": "1px 1px 2px #e5e5e5",
 		"border": "0"
 	},
 	{
-		"name": "AirBnb Landing Page Card Shadow",
+		"name": "AirBnb Landing Page Card",
 		"shadow": "0 16px 40px rgba(0,0,0,0.12)",
 		"border": '0'
 	},
