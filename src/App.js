@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { HuePicker } from "react-color";
 import Color from "color";
 
 //Module Imports
@@ -130,26 +131,30 @@ class Bloc extends Component {
 
 const ColorButts = ({ background, onChangeBackground }) => {
   return (
-    <ul className="ColorButts">
-      change background :
-      {backgroundColors.map((bg, index) => {
-        const colorButtsStyle = {
-          background: bg.color,
-          color: Color(bg.color).isDark() ? "#FFF" : "#000"
-        };
-        console.log(background, bg.color)
-        return (
-          <li
-            key={index}
-            onClick={()=>onChangeBackground(bg.color)}
-            className={background === bg.color ? "selected" : ""}
-            style={colorButtsStyle}
-          >
-            {bg.color}
-          </li>
-        );
-      })}
-    </ul>
+    <div className="ColorButts">
+      <ul>
+        change background :
+        {backgroundColors.map((bg, index) => {
+          const colorButtsStyle = {
+            background: bg.color,
+            color: Color(bg.color).isDark() ? "#FFF" : "#000"
+          };
+          return (
+            <li
+              key={index}
+              onClick={()=>onChangeBackground(bg.color)}
+              className={background === bg.color ? "selected" : ""}
+              style={colorButtsStyle}
+            >
+              {bg.color}
+            </li>
+          );
+        })}
+      </ul>
+      <div className="ColorPickerContainer">
+        <HuePicker color={background} onChange={(color)=>onChangeBackground(color.hex)} />
+      </div>
+    </div>
   );
 }
 
