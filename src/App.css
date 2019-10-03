@@ -64,20 +64,63 @@ p {
   left: 10px;
   width: 95%;
 }
-.ColorButts {
-  list-style-type: none;
+.page-footer {
   position: fixed;
   width: 100%;
-  right: 0px;
-  text-align: right;
-  bottom: 0px;
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
-  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(189, 195, 199, 0.3);
-  margin: 0;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
 }
+
+.page-footer__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: capitalize;
+;
+}
+
+.color-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.color-list__item {
+
+}
+
+.color-list__button {
+  transition: .3s all linear;
+  border: 1px solid #ccc;
+  font-size: 27px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 3px 5px;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  background: #f5f5f5;
+  letter-spacing: 1px;
+  display: inline-block;
+  outline: none;
+  padding: 0;
+}
+
+.color-list__button:hover,
+.color-list__button--selected {
+  border-radius: 4px;
+}
+
 .Copy {
   cursor: pointer;
   background-color: #fafafa;
@@ -105,20 +148,7 @@ p {
 .Copyred {
   background-color: red;
 }
-.ColorButts li {
-  padding: 5px 8px;
-  border: 1px solid #ccc;
-  font-size: 8px;
-  cursor: pointer;
-  margin: 3px 5px;
-  background: #f5f5f5;
-  border-radius: 2px;
-  letter-spacing: 1px;
-  display: inline-block;
-}
-.ColorButts li:hover {
-  border-color: #999;
-}
+
 .selected {
   font-weight: bold;
   border-color: #888 !important;

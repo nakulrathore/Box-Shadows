@@ -146,7 +146,12 @@ const shadows = [
 		"name": "AirBnb Landing Page Card Shadow",
 		"shadow": "0 16px 40px rgba(0,0,0,0.12)",
 		"border": '0'
-	}
+	},
+	{
+		"name": "Aisha Aqeel",
+		"shadow": "5px 10px #888888",
+		"border": "1px solid"
+	},
 ]
 
 
