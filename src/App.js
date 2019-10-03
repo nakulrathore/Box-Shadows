@@ -12,27 +12,37 @@ import shadows from "./shadows";
 
 
 class App extends Component {
+  state = { background: "#FFFFFF" };
+
+  handleOnChangeBackground = value => {
+    this.setState({
+      background: value
+    });
+  };
+
   render() {
+    const { background } = this.state;
+    document.body.style.backgroundColor = background;
     return (
       <div>
-        <Title />
+        <Title isDarkBackground={Color(background).isDark()}/>
         <GoogleBar />
         <div className="app">
           {shadows.map((anObjectMapped, index) => {
             return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
           })}
         </div>
-        <ColorButts />
+        <ColorButts background={background} onChangeBackground={this.handleOnChangeBackground}/>
       </div>
     );
   }
 }
 
-const Title = props => {
+const Title = ({isDarkBackground}) => {
   return (
-    <div className="title">
+    <div className="title" style={isDarkBackground ? {color: Color('#444').negate()}: {}}>
       <h1>Box Shadows</h1>
-      <p className="subtitle">Handpicked Box Shadows</p>
+      <p className="subtitle" style={isDarkBackground ? {color: Color('#777').negate()}: {}}>Handpicked Box Shadows</p>
       <a className="addnew" target="_blank" rel="noopener noreferrer" href="https://github.com/nakulrathore/Box-Shadows#contribute">
         <span className="addnewplus">+</span>
         Add New
@@ -40,6 +50,7 @@ const Title = props => {
     </div>
   );
 };
+
 class GoogleBar extends Component {
   state = {
     value: "Copy"
@@ -117,40 +128,29 @@ class Bloc extends Component {
   }
 }
 
-class ColorButts extends Component {
-  state = { background: "#FFFFFF" };
-
-  changeBackground = value => {
-    this.setState({
-      background: value
-    });
-  };
-
-  render() {
-    document.body.style.backgroundColor = this.state.background;
-    return (
-      <ul className="ColorButts">
-        change background :
-        {backgroundColors.map((bg, index) => {
-          const colorButtsStyle = {
-            background: bg.color,
-            color: Color(bg.color).isDark() ? "#FFF" : "#000"
-          };
-
-          return (
-            <li
-              key={index}
-              onClick={this.changeBackground.bind(this, bg.color)}
-              className={this.state.background === bg.color ? "selected" : ""}
-              style={colorButtsStyle}
-            >
-              {bg.color}
-            </li>
-          );
-        })}
-      </ul>
-    );
-  }
+const ColorButts = ({ background, onChangeBackground }) => {
+  return (
+    <ul className="ColorButts">
+      change background :
+      {backgroundColors.map((bg, index) => {
+        const colorButtsStyle = {
+          background: bg.color,
+          color: Color(bg.color).isDark() ? "#FFF" : "#000"
+        };
+        console.log(background, bg.color)
+        return (
+          <li
+            key={index}
+            onClick={()=>onChangeBackground(bg.color)}
+            className={background === bg.color ? "selected" : ""}
+            style={colorButtsStyle}
+          >
+            {bg.color}
+          </li>
+        );
+      })}
+    </ul>
+  );
 }
 
 export default App;
