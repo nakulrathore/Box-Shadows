@@ -142,6 +142,11 @@ const shadows = [
 		"shadow": "1px 1px 2px #e5e5e5",
 		"border": "0"
 	},
+	{
+		"name": "Aisha Aqeel",
+		"shadow": "5px 10px #888888",
+		"border": "1px solid"
+	},
 ]
 
 
