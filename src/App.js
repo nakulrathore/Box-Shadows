@@ -141,7 +141,6 @@ class ColorButts extends Component {
             <li
               key={index}
               onClick={this.changeBackground.bind(this, bg.color)}
-              bgvalue={bg.color}
               className={this.state.background === bg.color ? "selected" : ""}
               style={colorButtsStyle}
             >
