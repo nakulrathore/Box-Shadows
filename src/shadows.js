@@ -122,6 +122,11 @@ const shadows = [
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "0"
 	},
+	{
+		"name": "Android 10 Highlights Box Shadow",
+		"shadow": "4px 12px 47px 0 rgba(0,0,0,.1)",
+		"border": "0"
+	},
 ]
 
 
