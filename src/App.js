@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Color from "color";
 
 //Module Imports
 import "./App.css";
@@ -8,30 +9,54 @@ import "./App.css";
 //Data Imports
 import backgroundColors from "./backgrounds";
 import shadows from "./shadows";
+import PageFooter from "./components/PageFooter/PageFooter";
+import ColorList from "./components/ColorList/ColorList";
 
 
 class App extends Component {
+  state = { background: "#FFFFFF" };
+
+  handleOnChangeBackground = value => {
+    this.setState({
+      background: value
+    });
+  };
+
   render() {
+    const { background } = this.state;
+    document.body.style.backgroundColor = background;
+
+    const isDarkBackground = Color(background).isDark();
+
     return (
       <div>
-        <Title />
+        <Title isDarkBackground={Color(background).isDark()}/>
         <GoogleBar />
         <div className="app">
           {shadows.map((anObjectMapped, index) => {
             return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
           })}
         </div>
-        <ColorButts />
+
+        <PageFooter isDarkColorSelected={isDarkBackground}
+                    title={'change background :'}
+        >
+          <ColorList colors={backgroundColors}
+                     selectedColor={background}
+                     isDarkColorSelected={isDarkBackground}
+                     onColorChange={this.handleOnChangeBackground}
+          />
+        </PageFooter>
       </div>
     );
   }
 }
 
-const Title = props => {
+const Title = ({isDarkBackground}) => {
   return (
-    <div className="title">
+    <div className="title" style={isDarkBackground ? {color: Color('#444').negate()}: {}}>
       <h1>Box Shadows</h1>
-      <p className="subtitle">Handpicked Box Shadows</p>
+      <p className="subtitle" style={isDarkBackground ? {color: Color('#777').negate()}: {}}>Handpicked Box Shadows</p>
       <a className="addnew" target="_blank" rel="noopener noreferrer" href="https://github.com/nakulrathore/Box-Shadows#contribute">
         <span className="addnewplus">+</span>
         Add New
@@ -39,6 +64,7 @@ const Title = props => {
     </div>
   );
 };
+
 class GoogleBar extends Component {
   state = {
     value: "Copy"
@@ -112,37 +138,6 @@ class Bloc extends Component {
           <p>border:{this.props.border};</p>
         </div>
       </div>
-    );
-  }
-}
-
-class ColorButts extends Component {
-  state = { background: "#FFFFFF" };
-
-  changeBackground = value => {
-    this.setState({
-      background: value
-    });
-  };
-
-  render() {
-    document.body.style.backgroundColor = this.state.background;
-    return (
-      <ul className="ColorButts">
-        change background :
-        {backgroundColors.map((bg, index) => {
-          return (
-            <li
-              key={index}
-              onClick={this.changeBackground.bind(this, bg.color)}
-              bgvalue={bg.color}
-              className={this.state.background === bg.color ? "selected" : ""}
-            >
-              {bg.color}
-            </li>
-          );
-        })}
-      </ul>
     );
   }
 }
