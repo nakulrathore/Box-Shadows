@@ -136,6 +136,11 @@ const shadows = [
 		"shadow": "5px 10px #888888",
 		"border": "1px solid"
 	},
+	{
+		"name": "Dashed Button",
+		"shadow": "0 1px 4px rgba(0,0,0,.04)",
+		"border": "1px dashed"
+	}
 ]
 
 
