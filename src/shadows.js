@@ -147,6 +147,11 @@ const shadows = [
 		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
 		"border": "0"
 	},
+	{
+		"name": "Instagrame login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"border": "0"
+	},
 ]
 
 
