@@ -127,6 +127,16 @@ const shadows = [
 		"border": "0"
 	},
 	{
+		"name": "spotify login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"border": "0"
+	},
+	{
+		"name": "Instagrame login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"border": "0"
+	},
+  {
 		"name": "AirBnb Landing Page Card",
 		"shadow": "0 16px 40px rgba(0,0,0,0.12)",
 		"border": '0'
@@ -161,7 +171,6 @@ const shadows = [
 		"shadow": "inset 0px 0px 38px -24px #d9534f",
 		"border": "0"
 	},
-
 ]
 
 
