@@ -181,5 +181,10 @@ const shadows = [
 		"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.5)",
 		"border": "0"
 	},
+	{
+		"name": "Firebase Landing Page",
+		"shadow": "0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)",
+		"border": "1px solid #eceff1"
+	}
 ]
 export default shadows;
