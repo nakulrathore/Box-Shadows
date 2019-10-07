@@ -146,7 +146,12 @@ const shadows = [
 		"shadow": "5px 10px #888888",
 		"border": "1px solid"
 	},
-	{
+  {
+		"name": "Floating Button",
+		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
+		"border": "1px solid"
+  },
+  {
 		"name": "Inset shadow",
 		"shadow": "inset 0px 0px 38px -24px",
 		"border": "0"
@@ -172,6 +177,4 @@ const shadows = [
 		"border": "0"
 	},
 ]
-
-
 export default shadows;
