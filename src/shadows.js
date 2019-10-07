@@ -176,5 +176,10 @@ const shadows = [
 		"shadow": "inset 0px 0px 38px -24px #d9534f",
 		"border": "0"
 	},
+	{
+		"name": "Solid New",
+		"shadow": "10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600;",
+		"border": "2px solid"
+	},
 ]
 export default shadows;
