@@ -101,7 +101,7 @@ const shadows = [
 		"shadow": "0 2px 5px 0 rgba(0, 0, 0, 0.225)",
 		"border": "0"
 	},
-        {
+	{
 		"name": "A Nice Simple Shadow",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "0"
@@ -127,6 +127,16 @@ const shadows = [
 		"border": "0"
 	},
 	{
+		"name": "spotify login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"border": "0"
+	},
+	{
+		"name": "Instagrame login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"border": "0"
+	},
+  {
 		"name": "AirBnb Landing Page Card",
 		"shadow": "0 16px 40px rgba(0,0,0,0.12)",
 		"border": '0'
@@ -136,12 +146,35 @@ const shadows = [
 		"shadow": "5px 10px #888888",
 		"border": "1px solid"
 	},
-        {
+  {
 		"name": "Floating Button",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "1px solid"
+  },
+  {
+		"name": "Inset shadow",
+		"shadow": "inset 0px 0px 38px -24px",
+		"border": "0"
+	},
+	{
+		"name": "Inset Primary",
+		"shadow": "inset 0px 0px 38px -24px #0275d8",
+		"border": "0"
+	},
+	{
+		"name": "Inset Success",
+		"shadow": "inset 0px 0px 38px -24px #5cb85c",
+		"border": "0"
+	},
+	{
+		"name": "Inset Warning",
+		"shadow": "inset 0px 0px 38px -24px #f0ad4e",
+		"border": "0"
+	},
+	{
+		"name": "Inset Danger",
+		"shadow": "inset 0px 0px 38px -24px #d9534f",
+		"border": "0"
 	},
 ]
-
-
 export default shadows;
