@@ -128,12 +128,12 @@ const shadows = [
 	},
 	{
 		"name": "spotify login box shadow",
-		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)",
 		"border": "0"
 	},
 	{
 		"name": "Instagrame login box shadow",
-		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)",
 		"border": "0"
 	},
   {
@@ -181,5 +181,10 @@ const shadows = [
 		"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.5)",
 		"border": "0"
 	},
+  {
+    "name": "Zeit",
+    "shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
+    "border": "0"
+  },
 ]
 export default shadows;
