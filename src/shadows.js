@@ -176,5 +176,10 @@ const shadows = [
 		"shadow": "inset 0px 0px 38px -24px #d9534f",
 		"border": "0"
 	},
+	{
+		"name": "Nice and Crispy",
+		"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.5)",
+		"border": "0"
+	},
 ]
 export default shadows;
