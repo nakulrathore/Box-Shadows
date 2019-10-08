@@ -202,5 +202,10 @@ const shadows = [
 		"shadow": "0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)",
 		"border": "1px solid #eceff1"
 	},
+	{
+	"name": "Twitter Tweet Button",
+	"shadow": "rgba(0, 0, 0, 0.08) 0px 8px 28px",
+	"border": "0"
+	},
 ]
 export default shadows;
