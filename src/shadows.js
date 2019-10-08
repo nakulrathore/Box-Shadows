@@ -1,5 +1,4 @@
 const shadows = [
-
 	{
 		"name": "Google docs",
 		"shadow": "0 0 0 0.75pt #d1d1d1, 0 0 3pt 0.75pt #ccc",
@@ -132,11 +131,11 @@ const shadows = [
 		"border": "0"
 	},
 	{
-		"name": "Instagrame login box shadow",
+		"name": "Instagram login box shadow",
 		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)",
 		"border": "0"
 	},
-  {
+  	{
 		"name": "AirBnb Landing Page Card",
 		"shadow": "0 16px 40px rgba(0,0,0,0.12)",
 		"border": '0'
@@ -182,30 +181,41 @@ const shadows = [
 		"shadow": "0 0 10px 0 rgba(0, 0, 0, 0.15)",
 		"border": "0"
 	},
-  {
+  	{
 		"name": "Solid New",
 		"shadow": "10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600;",
 		"border": "2px solid"
-  },
-  {
+  	},
+  	{
 		"name": "Nice and Crispy",
 		"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.5)",
 		"border": "0"
 	},
-  {
-    "name": "Zeit",
-    "shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
-    "border": "0"
-  },
+  	{
+    		"name": "Zeit",
+    		"shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
+    		"border": "0"
+  	},
 	{
 		"name": "Firebase Landing Page",
 		"shadow": "0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)",
 		"border": "1px solid #eceff1"
 	},
 	{
-	"name": "Twitter Tweet Button",
-	"shadow": "rgba(0, 0, 0, 0.08) 0px 8px 28px",
-	"border": "0"
+		"name": "Twitter Tweet Button",
+		"shadow": "rgba(0, 0, 0, 0.08) 0px 8px 28px",
+		"border": "0"
+	},
+	{
+		"name": "Waze",
+		"shadow": "0 1px 1px rgba(2,219,238,.2), 1px 0 0 rgba(5,180,223,.1), -1px 0 0 rgba(5,158,215,.1)",
+		"border": "0"
+	},
+	{
+		"name": "bitbucket",
+		"shadow": "0 1px 1px rgba(38,132,255,.2), 1px 0 0 rgba(38,132,255,.1), -1px 0 0 rgba(0,81,206,.1)",
+		"border": "0"
 	},
 ]
+
 export default shadows;
