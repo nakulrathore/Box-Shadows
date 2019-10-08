@@ -207,5 +207,10 @@ const shadows = [
 	"shadow": "rgba(0, 0, 0, 0.08) 0px 8px 28px",
 	"border": "0"
 	},
+	{
+		"name": "Udemy Courses",
+		"shadow": "0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);",
+		"border": "0"
+	}
 ]
 export default shadows;
