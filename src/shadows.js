@@ -128,12 +128,12 @@ const shadows = [
 	},
 	{
 		"name": "spotify login box shadow",
-		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)",
 		"border": "0"
 	},
 	{
 		"name": "Instagrame login box shadow",
-		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)", 
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)",
 		"border": "0"
 	},
   {
@@ -180,6 +180,21 @@ const shadows = [
 		"name": "Solid New",
 		"shadow": "10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600;",
 		"border": "2px solid"
+  },
+  {
+		"name": "Nice and Crispy",
+		"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.5)",
+		"border": "0"
+	},
+  {
+    "name": "Zeit",
+    "shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
+    "border": "0"
+  },
+	{
+		"name": "Firebase Landing Page",
+		"shadow": "0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)",
+		"border": "1px solid #eceff1"
 	},
 ]
 export default shadows;
