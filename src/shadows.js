@@ -92,6 +92,11 @@ const shadows = [
 		"border": "0"
 	},
 	{
+		"name": "LinkedIn Home Welcome Screen",
+		"shadow": "0 0 0 1px rgba(0,0,0,0.15), 0 4px 6px rgba(0,0,0,0.2)",
+		"border": "none"
+	},
+	{
 		"name": "Chat Button Widget",
 		"shadow": "0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2)",
 		"border": "0"
