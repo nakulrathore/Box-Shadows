@@ -1,6 +1,7 @@
 import React from "react";
 import Color from "color";
 import COLORS from "../../colors";
+import ReactTooltip from 'react-tooltip';
 
 const ColorList = ({colors,
                    selectedColor,
@@ -19,12 +20,14 @@ const ColorList = ({colors,
 
               onColorChange(colorItem.color);
             }}
+            data-tip={ colorItem.color }
             className={`color-list__button ${selectedColor === colorItem.color ? 'color-list__button--selected' : ''}`}
             style={{
               background: colorItem.color,
               color: isDarkColorSelected ? COLORS.WHITE : COLORS.BLACK
             }}
           > </button>
+          <ReactTooltip place="top" type="dark" effect="solid"/>
         </li>
       )}
     </ul>
