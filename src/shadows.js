@@ -188,7 +188,7 @@ const shadows = [
 	},
   	{
 		"name": "Solid New",
-		"shadow": "10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600;",
+		"shadow": "10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600",
 		"border": "2px solid"
   	},
   	{
@@ -223,7 +223,7 @@ const shadows = [
 	},
 	{
 		"name": "Udemy Courses",
-		"shadow": "0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);",
+		"shadow": "0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1)",
 		"border": "0"
 	},
   {
