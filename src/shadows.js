@@ -155,52 +155,27 @@ const shadows = [
 		"name": "Floating Button",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "1px solid"
-  },
-  {
-		"name": "Inset shadow",
-		"shadow": "inset 0px 0px 38px -24px",
-		"border": "0"
-	},
-	{
-		"name": "Inset Primary",
-		"shadow": "inset 0px 0px 38px -24px #0275d8",
-		"border": "0"
-	},
-	{
-		"name": "Inset Success",
-		"shadow": "inset 0px 0px 38px -24px #5cb85c",
-		"border": "0"
-	},
-	{
-		"name": "Inset Warning",
-		"shadow": "inset 0px 0px 38px -24px #f0ad4e",
-		"border": "0"
-	},
-	{
-		"name": "Inset Danger",
-		"shadow": "inset 0px 0px 38px -24px #d9534f",
-		"border": "0"
-	},
+    },
 	{
 		"name": "anime.to search",
 		"shadow": "0 0 10px 0 rgba(0, 0, 0, 0.15)",
 		"border": "0"
 	},
-  {
+  	{
 		"name": "Solid New",
 		"shadow": "10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600",
 		"border": "0"
-  },
-  {
+  	},
+  	{
 		"name": "Nice and Crispy",
 		"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.5)",
 		"border": "0"
 	},
-  {
-     "name": "Zeit",
-     "shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
-     "border": "0"
-  },
+  	{
+		"name": "Zeit",
+		"shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
+		"border": "0"
+  	},
 	{
 		"name": "Firebase Landing Page",
 		"shadow": "0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)",
@@ -226,10 +201,10 @@ const shadows = [
 		"shadow": "0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1)",
 		"border": "0"
 	},
-  {
-	"name": "Netflix Login Modal",
-	"shadow": "0 0 8px 0 rgba(0,0,0,.32)",
-	"border": "0"
+  	{
+		"name": "Netflix Login Modal",
+		"shadow": "0 0 8px 0 rgba(0,0,0,.32)",
+		"border": "0"
 	},
 	{
 		"name": "Paytm",
