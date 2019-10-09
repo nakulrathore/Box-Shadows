@@ -91,6 +91,11 @@ const shadows = [
 		"border": "0"
 	},
 	{
+		"name": "LinkedIn Home Welcome Screen",
+		"shadow": "0 0 0 1px rgba(0,0,0,0.15), 0 4px 6px rgba(0,0,0,0.2)",
+		"border": "none"
+	},
+	{
 		"name": "Chat Button Widget",
 		"shadow": "0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2)",
 		"border": "0"
@@ -150,8 +155,8 @@ const shadows = [
 		"name": "Floating Button",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "1px solid"
-  	},
-  	{
+  },
+  {
 		"name": "Inset shadow",
 		"shadow": "inset 0px 0px 38px -24px",
 		"border": "0"
@@ -192,9 +197,9 @@ const shadows = [
 		"border": "0"
 	},
   	{
-    		"name": "Zeit",
-    		"shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
-    		"border": "0"
+        "name": "Zeit",
+        "shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
+        "border": "0"
   	},
 	{
 		"name": "Firebase Landing Page",
@@ -216,6 +221,15 @@ const shadows = [
 		"shadow": "0 1px 1px rgba(38,132,255,.2), 1px 0 0 rgba(38,132,255,.1), -1px 0 0 rgba(0,81,206,.1)",
 		"border": "0"
 	},
+	{
+		"name": "Udemy Courses",
+		"shadow": "0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);",
+		"border": "0"
+	},
+  {
+	"name": "Netflix Login Modal",
+	"shadow": "0 0 8px 0 rgba(0,0,0,.32)",
+	"border": "0"
+	},
 ]
-
 export default shadows;
