@@ -207,5 +207,10 @@ const shadows = [
 	"shadow": "rgba(0, 0, 0, 0.08) 0px 8px 28px",
 	"border": "0"
 	},
+	{
+	"name": "Netflix Login Modal",
+	"shadow": "0 0 8px 0 rgba(0,0,0,.32)",
+	"border": "0"
+	},
 ]
 export default shadows;
