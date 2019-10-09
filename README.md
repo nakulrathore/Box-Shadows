@@ -3,10 +3,10 @@ Handpicked Box-Shadows for Developers and Designers
 
 
 # Contribute
-###### Happy Hacktober! want to add new Box-Shadow? 
-###### If you are a beginner, and looking for your first contribution. please follow these steps :-
+###### Happy Hacktober! Want to add new Box-Shadow? 
+###### If you're a beginner and looking for your first contribution. please follow these steps:-
 
-####All the Box-Shadows are loaded in a single file : [shadows.js](https://github.com/nakulrathore/Box-Shadows/blob/master/src/shadows.js)  in the [src](https://github.com/nakulrathore/Box-Shadows/tree/master/src) directory.
+#### All the Box-Shadows are loaded in a single file : [shadows.js](https://github.com/nakulrathore/Box-Shadows/blob/master/src/shadows.js)  in the [src](https://github.com/nakulrathore/Box-Shadows/tree/master/src) directory.
 
 ## How to add new box-shadow
 
@@ -62,6 +62,8 @@ Handpicked Box-Shadows for Developers and Designers
 ###### Now that our new branch is created, we can switch to make sure that we are working on that branch by using the git checkout command:
 
 ##### ` git checkout new-branch `
+
+###### Note: Another way of creating a branch and switching to it is by using the command line shorthand ` git checkout -b new-branch `. This will create a new branch and switch to it.
 
 ##### ` git add -A ` or ` git add . ` for adding the changes file.
 

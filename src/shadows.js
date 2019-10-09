@@ -1,5 +1,4 @@
 const shadows = [
-
 	{
 		"name": "Google docs",
 		"shadow": "0 0 0 0.75pt #d1d1d1, 0 0 3pt 0.75pt #ccc",
@@ -90,6 +89,11 @@ const shadows = [
 		"name": "Telegram login",
 		"shadow": "0 1px 1px rgba(97,127,152,.2), 1px 0 0 rgba(97,127,152,.1), -1px 0 0 rgba(97,127,152,.1)",
 		"border": "0"
+	},
+	{
+		"name": "LinkedIn Home Welcome Screen",
+		"shadow": "0 0 0 1px rgba(0,0,0,0.15), 0 4px 6px rgba(0,0,0,0.2)",
+		"border": "none"
 	},
 	{
 		"name": "Chat Button Widget",
@@ -211,6 +215,11 @@ const shadows = [
 		"name": "Udemy Courses",
 		"shadow": "0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);",
 		"border": "0"
-	}
+	},
+  {
+	"name": "Netflix Login Modal",
+	"shadow": "0 0 8px 0 rgba(0,0,0,.32)",
+	"border": "0"
+	},
 ]
 export default shadows;
