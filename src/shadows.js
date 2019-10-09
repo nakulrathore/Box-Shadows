@@ -231,5 +231,10 @@ const shadows = [
 	"shadow": "0 0 8px 0 rgba(0,0,0,.32)",
 	"border": "0"
 	},
+	{
+		"name": "Paytm",
+		"shadow": "0 0 15px 0 rgba(0,0,0,0.03), 0 20px 40px 10px rgba(224,224,224,0.2)",
+		"border": "0"
+	},
 ]
 export default shadows;
