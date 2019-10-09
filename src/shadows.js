@@ -141,7 +141,7 @@ const shadows = [
 
   {
     name: "MDN Demo",
-    shadow: "12px 12px 2px 1px rgba(0, 0, 255, .2);",
+    shadow: "12px 12px 2px 1px rgba(0, 0, 255, 0.2)",
     border: "5px"
   }
 ];
