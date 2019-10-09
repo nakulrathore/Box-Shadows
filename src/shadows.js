@@ -186,21 +186,21 @@ const shadows = [
 		"shadow": "0 0 10px 0 rgba(0, 0, 0, 0.15)",
 		"border": "0"
 	},
-  	{
+  {
 		"name": "Solid New",
 		"shadow": "10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600",
-		"border": "2px solid"
-  	},
-  	{
+		"border": "0"
+  },
+  {
 		"name": "Nice and Crispy",
 		"shadow": "0px 1px 2px 0px rgba(0, 0, 0, 0.5)",
 		"border": "0"
 	},
-  	{
-        "name": "Zeit",
-        "shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
-        "border": "0"
-  	},
+  {
+     "name": "Zeit",
+     "shadow": "rgba(0, 0, 0, 0.12) 0px 5px 10px 0px",
+     "border": "0"
+  },
 	{
 		"name": "Firebase Landing Page",
 		"shadow": "0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15)",
