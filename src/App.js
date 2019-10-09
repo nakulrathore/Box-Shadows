@@ -130,7 +130,7 @@ class Bloc extends Component {
       >
         <h2>{this.props.name}</h2>
         <br />
-        <CopyToClipboard text={"box-shadow:" + this.props.shadow + ";border:" + this.props.border} onCopy={this.copyThis.bind(this)}>
+        <CopyToClipboard text={`box-shadow:${this.props.shadow};border:${this.props.border};`} onCopy={this.copyThis.bind(this)}>
           <span className={this.state.value}>{this.state.value}</span>
         </CopyToClipboard>
         <div className="css-style">
