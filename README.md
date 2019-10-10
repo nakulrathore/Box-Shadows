@@ -1,5 +1,5 @@
 **Box Shadows**
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 Handpicked Box-Shadows for Developers and Designers
 
 
@@ -96,6 +96,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/oskar-kupski-elpassion"><img src="https://avatars0.githubusercontent.com/u/56027069?v=4" width="100px;" alt="oskar-kupski-elpassion"/><br /><sub><b>oskar-kupski-elpassion</b></sub></a><br /><a href="#design-oskar-kupski-elpassion" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/sandeshan"><img src="https://avatars1.githubusercontent.com/u/6829737?v=4" width="100px;" alt="Sandesh Naik"/><br /><sub><b>Sandesh Naik</b></sub></a><br /><a href="#design-sandeshan" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/rvrvrv"><img src="https://avatars1.githubusercontent.com/u/55961065?v=4" width="100px;" alt="Rich"/><br /><sub><b>Rich</b></sub></a><br /><a href="#design-rvrvrv" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/AlexxMart"><img src="https://avatars3.githubusercontent.com/u/26124377?v=4" width="100px;" alt="Alexx Martínez"/><br /><sub><b>Alexx Martínez</b></sub></a><br /><a href="#maintenance-AlexxMart" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
