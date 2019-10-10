@@ -121,6 +121,32 @@ p {
   border-radius: 4px;
 }
 
+.color-list__button.picker {
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-list__button.picker span {
+    font-size: 0.5em;
+    position: absolute;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.color-picker {
+  position: fixed;
+  display: none;
+  z-index: 100;
+}
+.color-picker.--is-active {
+  display: block;
+  transform: translate(-50%, -110%);
+}
+
 .Copy {
   cursor: pointer;
   background-color: #fafafa;

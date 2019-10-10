@@ -11,14 +11,29 @@ import backgroundColors from "./backgrounds";
 import shadows from "./shadows";
 import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
-
+import ColorPicker from "./components/ColorPicker";
 
 class App extends Component {
-  state = { background: "#FFFFFF" };
+  state = {
+    background: "#FFFFFF",
+    picker: {
+      enabled: false,
+      position: {x: 0 ,y: 0}
+    }
+  };
 
-  handleOnChangeBackground = value => {
+  handleOnChangeBackground = (value, togglePicker = false) => {
+    
     this.setState({
-      background: value
+      background: value,
+      picker: {...this.state.picker, enabled: !togglePicker}
+    });
+  };
+
+  handleTogglePicker = mouse => {
+    let picker = this.state.picker;
+    this.setState({
+      picker: {enabled: !picker.enabled, position: mouse }
     });
   };
 
@@ -37,14 +52,20 @@ class App extends Component {
             return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
           })}
         </div>
+       
+        <ColorPicker status={this.state.picker} onColorChange={this.handleOnChangeBackground} />
 
         <PageFooter isDarkColorSelected={isDarkBackground}
                     title={'change background :'}
         >
+           
+
           <ColorList colors={backgroundColors}
                      selectedColor={background}
                      isDarkColorSelected={isDarkBackground}
                      onColorChange={this.handleOnChangeBackground}
+                     onTogglePicker={this.handleTogglePicker}
+                     pickerStatus={this.state.picker.enabled}
           />
         </PageFooter>
       </div>
