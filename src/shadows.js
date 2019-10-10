@@ -150,12 +150,11 @@ const shadows = [
 		"shadow": "5px 10px #888888",
 		"border": "1px solid"
 	},
-	
  	{
 		"name": "Floating Button",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "1px solid"
-    },
+        },
 	{
 		"name": "anime.to search",
 		"shadow": "0 0 10px 0 rgba(0, 0, 0, 0.15)",
@@ -222,5 +221,10 @@ const shadows = [
 		"border": "0"
 		
 	},
+	{
+		"name": "npm - main buttons",
+		"shadow": "inset 4px 4px 0 #fff, 7px 7px 0 rgba(128, 83, 35, 0.2)",
+		"border": "3px solid #000"
+	}
 ]
 export default shadows;
