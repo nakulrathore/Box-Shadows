@@ -96,7 +96,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/oskar-kupski-elpassion"><img src="https://avatars0.githubusercontent.com/u/56027069?v=4" width="100px;" alt="oskar-kupski-elpassion"/><br /><sub><b>oskar-kupski-elpassion</b></sub></a><br /><a href="#design-oskar-kupski-elpassion" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/sandeshan"><img src="https://avatars1.githubusercontent.com/u/6829737?v=4" width="100px;" alt="Sandesh Naik"/><br /><sub><b>Sandesh Naik</b></sub></a><br /><a href="#design-sandeshan" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/rvrvrv"><img src="https://avatars1.githubusercontent.com/u/55961065?v=4" width="100px;" alt="Rich"/><br /><sub><b>Rich</b></sub></a><br /><a href="#design-rvrvrv" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/da201501181"><img src="https://avatars2.githubusercontent.com/u/25818305?v=4" width="100px;" alt="Priyam Vora"/><br /><sub><b>Priyam Vora</b></sub></a><br /><a href="https://github.com/nakulrathore/Box-Shadows/commits?author=da201501181" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/da201501181"><img src="https://avatars2.githubusercontent.com/u/25818305?v=4" width="100px;" alt="Priyam Vora"/><br /><sub><b>Priyam Vora</b></sub></a><br /><a href="https://github.com/nakulrathore/Box-Shadows/commits?author=da201501181" title="Code">💻</a> <a href="#maintenance-da201501181" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
