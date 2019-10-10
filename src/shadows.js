@@ -211,5 +211,10 @@ const shadows = [
 		"shadow": "0 0 15px 0 rgba(0,0,0,0.03), 0 20px 40px 10px rgba(224,224,224,0.2)",
 		"border": "0"
 	},
+	{
+	        "name": "Material Design",
+	        "shadow": "0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)",
+	        "border": "1px"
+        },
 ]
 export default shadows;
