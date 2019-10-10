@@ -31,6 +31,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "ivankahl",
+      "name": "Ivan Kahl",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5931577?v=4",
+      "profile": "http://ivankahl.com/",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
