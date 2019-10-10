@@ -20,7 +20,6 @@ const ColorList = ({colors,
           <button
             onClick={(e) => {
               e.preventDefault();
-
               onColorChange(colorItem.color);
             }}
             data-tip={ colorItem.color }

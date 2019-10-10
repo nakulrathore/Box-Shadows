@@ -24,7 +24,8 @@ class App extends Component {
 
   handleOnChangeBackground = value => {
     this.setState({
-      background: value
+      background: value,
+      picker: {...this.state.picker, enabled: false}
     });
   };
 
