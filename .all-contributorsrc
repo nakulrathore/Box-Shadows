@@ -40,6 +40,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "kyleatblackfoot",
+      "name": "Kyle Wetton",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16750833?v=4",
+      "profile": "https://github.com/kyleatblackfoot",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
