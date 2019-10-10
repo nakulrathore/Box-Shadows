@@ -20,7 +20,7 @@ const ColorList = ({colors,
           <button
             onClick={(e) => {
               e.preventDefault();
-              onColorChange(colorItem.color);
+              onColorChange(colorItem.color, true); // Pass true to hide picker on color change
             }}
             data-tip={ colorItem.color }
             className={`color-list__button ${selectedColor === colorItem.color ? 'color-list__button--selected' : ''}`}

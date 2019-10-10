@@ -22,10 +22,11 @@ class App extends Component {
     }
   };
 
-  handleOnChangeBackground = value => {
+  handleOnChangeBackground = (value, togglePicker = false) => {
+    
     this.setState({
       background: value,
-      picker: {...this.state.picker, enabled: false}
+      picker: {...this.state.picker, enabled: !togglePicker}
     });
   };
 
