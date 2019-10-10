@@ -222,5 +222,11 @@ const shadows = [
 		"border": "0"
 		
 	},
+	{
+		"name": "Amazon",
+		"shadow": "rgba(86,61,124,.2)",
+		"border": "1px"
+		
+	},
 ]
 export default shadows;
