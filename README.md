@@ -1,4 +1,5 @@
 **Box Shadows**
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 Handpicked Box-Shadows for Developers and Designers
 
 
@@ -83,3 +84,19 @@ Handpicked Box-Shadows for Developers and Designers
 
 
 LICENSE : MIT
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/oskar-kupski-elpassion"><img src="https://avatars0.githubusercontent.com/u/56027069?v=4" width="100px;" alt="oskar-kupski-elpassion"/><br /><sub><b>oskar-kupski-elpassion</b></sub></a><br /><a href="#design-oskar-kupski-elpassion" title="Design">🎨</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
