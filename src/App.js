@@ -12,6 +12,8 @@ import shadows from "./shadows";
 import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
 import ColorPicker from "./components/ColorPicker";
+import GithubRibbon from "./components/GithubRibbon";
+
 
 class App extends Component {
   state = {
@@ -46,6 +48,7 @@ class App extends Component {
     return (
       <div>
         <Title isDarkBackground={Color(background).isDark()}/>
+        <GithubRibbon />
         <GoogleBar />
         <div className="app">
           {shadows.map((anObjectMapped, index) => {
