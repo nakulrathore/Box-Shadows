@@ -212,8 +212,8 @@ const shadows = [
 		"border": "0"
 	},
 	{
-	        "name": "Material Design",
-	        "shadow": "0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)",
+	        "name": "Material Design - Google Calendar",
+	        "shadow": "0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12)",
 	        "border": "1px"
         },
 ]
