@@ -28,17 +28,27 @@
   color: #777;
 }
 .addnew {
-  font-size: 12px;
   text-decoration: none;
-  color: #3498db;
   padding: 5px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 14px;
+  display: inline-block;
+  box-shadow: 1px 1px 6px #dedada;
+  transition: all .1s;
+  border: 1px solid #3498db;
+  border-radius: 3px;
 }
 .addnew:hover {
-  border-bottom: 1px solid #3498db;
+  background-color: #fff !important;
+  color: #3498db !important;
 }
 .addnewplus {
-  font-size: 21px;
-  vertical-align: sub;
+  font-size: 26px;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 h1 {
   margin-bottom: 0;
