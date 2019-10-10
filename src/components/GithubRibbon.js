@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Banner extends Component{
+class GithubRibbon extends Component{
   render(){
      return (
      
@@ -12,4 +12,4 @@ class Banner extends Component{
     );
   }
 }
-export default Banner;
+export default GithubRibbon;
