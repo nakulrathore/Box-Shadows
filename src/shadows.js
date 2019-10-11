@@ -225,6 +225,11 @@ const shadows = [
 		"name": "npm - main buttons",
 		"shadow": "inset 4px 4px 0 #fff, 7px 7px 0 rgba(128, 83, 35, 0.2)",
 		"border": "3px solid #000"
+	},
+	{
+		"name": "Glitch - Main Window",
+		"shadow": "4px 4px #c3c3c3",
+		"border": "1px solid #c3c3c3"
 	}
 ]
 export default shadows;
