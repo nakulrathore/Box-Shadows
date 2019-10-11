@@ -240,6 +240,6 @@ const shadows = [
 		"name": "Netlify Sign Up Shadow",
 		"shadow": "0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12)",
 		"border": "0"
-	}
+	},
 ]
 export default shadows;
