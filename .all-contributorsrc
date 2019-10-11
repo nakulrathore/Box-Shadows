@@ -58,6 +58,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "teslatickles",
+      "name": "Hunter Hartline",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/30253127?v=4",
+      "profile": "https://github.com/teslatickles",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
