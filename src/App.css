@@ -228,8 +228,11 @@ h3 {
 body {
   background: #eee;
   font-family: "Raleway", sans-serif;
-  padding: 0 0 50px 0;
+  
   color: #555;
+  
+  padding-bottom:120px;
+
 }
 
 .app {
