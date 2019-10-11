@@ -1,5 +1,5 @@
 **Box Shadows**
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
 Handpicked Box-Shadows for Developers and Designers
 
 
@@ -99,6 +99,7 @@ Thanks goes to these wonderful people:
     <td align="center"><a href="https://github.com/briancbarrow"><img src="https://avatars2.githubusercontent.com/u/13695093?v=4" width="100px;" alt="Brian Barrow"/><br /><sub><b>Brian Barrow</b></sub></a><br /><a href="#design-briancbarrow" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/kyleatblackfoot"><img src="https://avatars3.githubusercontent.com/u/16750833?v=4" width="100px;" alt="Kyle Wetton"/><br /><sub><b>Kyle Wetton</b></sub></a><br /><a href="https://github.com/nakulrathore/Box-Shadows/commits?author=kyleatblackfoot" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Sabihashaik"><img src="https://avatars3.githubusercontent.com/u/21033484?v=4" width="100px;" alt="Sabiha Shaik"/><br /><sub><b>Sabiha Shaik</b></sub></a><br /><a href="https://github.com/nakulrathore/Box-Shadows/commits?author=Sabihashaik" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/teslatickles"><img src="https://avatars2.githubusercontent.com/u/30253127?v=4" width="100px;" alt="Hunter Hartline"/><br /><sub><b>Hunter Hartline</b></sub></a><br /><a href="#design-teslatickles" title="Design">🎨</a></td>
   </tr>
 </table>
 
