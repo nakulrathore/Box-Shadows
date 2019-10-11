@@ -30,19 +30,18 @@
 .addnew {
   text-decoration: none;
   padding: 5px;
-  background-color: #3498db;
-  color: #fff;
+  background-color: #fff;
+  color: #3498db;
   font-size: 15px;
   margin-top: 14px;
   display: inline-block;
-  box-shadow: 1px 1px 6px #dedada;
   transition: all .1s;
   border: 1px solid #3498db;
   border-radius: 3px;
 }
 .addnew:hover {
-  background-color: #fff !important;
-  color: #3498db !important;
+  background-color: #3498db !important;
+  color: #fff !important;
 }
 .addnewplus {
   font-size: 26px;
