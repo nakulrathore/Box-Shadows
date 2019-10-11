@@ -219,7 +219,7 @@ const shadows = [
 		"name": "Inside Shadow",
 		"shadow": "inset 0 0 10px 0 rgba(95, 71, 71, 0.35)",
 		"border": "0"
-		
+
 	},
 	{
 		"name": "npm - main buttons",
@@ -230,6 +230,11 @@ const shadows = [
 		"name": "Glitch - Main Window",
 		"shadow": "4px 4px #c3c3c3",
 		"border": "1px solid #c3c3c3"
+	},
+	{
+		"name": "Fox Brasil",
+		"shadow": "1px 0px 12px 7px rgba (0,0,0,0,50)",
+		"border": "0"
 	}
 ]
 export default shadows;
