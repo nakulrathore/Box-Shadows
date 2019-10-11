@@ -235,6 +235,6 @@ const shadows = [
 		"name": "Codementor - Feature Card",
 		"shadow": "0 6px 12px 0 rgba(51,51,51,0.1)",
 		"border": "1px solid #e8f5f9"
-	}
+	},
 ]
 export default shadows;
