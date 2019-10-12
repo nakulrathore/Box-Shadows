@@ -11,13 +11,14 @@ const ColorList = ({colors,
                    pickerStatus
                   }) => {
   return (
+    <div>
     <ul className="color-list">
       {colors.map(colorItem =>
         <li
           className="color-list__item"
           key={colorItem.color}
         >
-          <button
+          <button title="Select background color"
             onClick={(e) => {
               e.preventDefault();
               onColorChange(colorItem.color, true); // Pass true to hide picker on color change
@@ -32,7 +33,8 @@ const ColorList = ({colors,
           <ReactTooltip place="top" type="dark" effect="solid"/>
         </li>
       )}
-        <button 
+    </ul>
+    <button
         onClick={(e) => {
           e.preventDefault();
           
@@ -42,9 +44,7 @@ const ColorList = ({colors,
         }}
         data-tip={pickerStatus ? 'Close' : 'Choose a custom color'}
         className='color-list__button picker'><span>{pickerStatus ? 'X' : '#'}</span></button>
-    </ul>
-
-
+    </div>
   );
 };
 
