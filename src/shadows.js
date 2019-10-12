@@ -30,6 +30,11 @@ const shadows = [
 		"border": "0"
 	},
 	{
+		"name": "Udacity Testimonial",
+		"shadow": "0 0 4px 0 rgba(17,22,26,.16), 0 2px 4px 0 rgba(17,22,26,.08), 0 4px 8px 0 rgba(17,22,26,.08), 0 -3px #02b3e4",
+		"border": "0"
+	},
+	{
 		"name": "Angular",
 		"shadow": "0 6px 6px rgba(10,16,20,.15), 0 0 52px rgba(10,16,20,.12)",
 		"border": "0"
