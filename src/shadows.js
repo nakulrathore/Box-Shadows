@@ -251,5 +251,10 @@ const shadows = [
 		"shadow": "0 0 11px rgba(33,33,33,.2)",
 		"border": "1px solid #ccc"
 	},
+	{
+		"name": "codepen-Material design",
+		"shadow": " 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
+		"border": "0"
+	},
 ]
 export default shadows;
