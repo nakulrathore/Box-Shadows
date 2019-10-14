@@ -261,5 +261,10 @@ const shadows = [
 		"shadow": "0 20px 30px 0 #e5e5e5",
 		"border": "2px solid #2081bf"
 	},
+	{
+		"name": "Google Search Recommendation",
+		"shadow": "0 4px 6px 0 rgba(32,33,36,0.28)",
+		"border":"0"
+	}
 ]
 export default shadows;
