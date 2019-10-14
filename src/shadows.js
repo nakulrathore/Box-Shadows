@@ -221,6 +221,37 @@ const shadows = [
 		"shadow": "inset 0 0 10px 0 rgba(95, 71, 71, 0.35)",
 		"border": "0"
 		
-	},
+    },
+    {
+        "name": "Bulma.io",
+        "shadow": "0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02)",
+        "border": "0"
+    },
+    {
+        "name": "Spectre.css",
+        "shadow": "0 .25rem 1rem rgba(48,55,66,.15)",
+        "border": "0"
+    },
+    {
+        "name": "SemanticUI",
+        "shadow": "0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5",
+        "border": "0"
+    },
+    {
+        "name": "UIKit",
+        "shadow": "0 5px 15px rgba(0,0,0,0.08)",
+        "border": "0"
+    }, 
+    {
+        "name": "Leaf",
+        "shadow": "0px 1px 2px 1px rgba(0,0,0,0.12)",
+        "border": "0"
+    },
+    {
+        "name": "MaterializeCSS",
+        "shadow": "0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)",
+        "border": "0"
+    }
+
 ]
 export default shadows;
