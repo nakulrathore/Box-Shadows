@@ -251,5 +251,10 @@ const shadows = [
 		"shadow": "0 0 11px rgba(33,33,33,.2)",
 		"border": "1px solid #ccc"
 	},
+	{
+		"name": "Quicken Loans Hover Shadow",
+		"shadow": "0 20px 30px 0 #e5e5e5",
+		"border": "2px solid #2081bf"
+	},
 ]
 export default shadows;
