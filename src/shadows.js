@@ -219,7 +219,7 @@ const shadows = [
 	        "name": "Material Design - Google Calendar",
 	        "shadow": "0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12)",
 	        "border": "1px"
-        },
+  },
 	{
 		"name": "Inside Shadow",
 		"shadow": "inset 0 0 10px 0 rgba(95, 71, 71, 0.35)",
@@ -242,7 +242,7 @@ const shadows = [
 		"border": "1px solid #e8f5f9"
 	},
 	{
-		"name": "Netlify Sign Up Shadow",
+		"name": "Netlify Sign Up",
 		"shadow": "0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12)",
 		"border": "0"
 	},
@@ -252,9 +252,13 @@ const shadows = [
 		"border": "1px solid #ccc"
 	},
 	{
-		"name": "codepen-Material design",
+		"name": "Codepen Material design",
 		"shadow": " 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
 		"border": "0"
+  },
+		"name": "Quicken Loans Shadow",
+		"shadow": "0 20px 30px 0 #e5e5e5",
+		"border": "2px solid #2081bf"
 	},
 ]
 export default shadows;
