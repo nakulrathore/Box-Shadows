@@ -260,5 +260,10 @@ const shadows = [
 		"shadow": "0 20px 30px 0 #e5e5e5",
 		"border": "2px solid #2081bf"
 	},
+		{
+		"name": "gaana login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)",
+		"border": "0"
+	},
 ]
 export default shadows;
