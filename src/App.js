@@ -37,6 +37,19 @@ class App extends Component {
     });
   };
 
+  /**
+  * Search and tag duplicates for each Box-Shadows
+  */
+  tagDuplicate = list => {
+    list.forEach(shadow => {
+      const dup = list.find(s => s.shadow === shadow.shadow && s.name !== shadow.name);
+      if (dup && !dup.hasOwnProperty('duplicateOf')) {
+        dup['duplicateOf'] = shadow.name;
+      }
+    });
+    return list;
+  };
+
   render() {
     const { background } = this.state;
     document.body.style.backgroundColor = background;
@@ -48,7 +61,7 @@ class App extends Component {
         <Title isDarkBackground={Color(background).isDark()}/>
         <GoogleBar />
         <div className="app">
-          {shadows.map((anObjectMapped, index) => {
+        {this.tagDuplicate(shadows).map((anObjectMapped, index) => {
             return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
           })}
         </div>

@@ -25,16 +25,16 @@
 }
 .subtitle {
   font-size: 14px;
-  color: #777;
+  color: #6e6e6e;
 }
 .addnew {
   font-size: 12px;
   text-decoration: none;
-  color: #3498db;
+  color: #2373a8;
   padding: 5px;
 }
 .addnew:hover {
-  border-bottom: 1px solid #3498db;
+  border-bottom: 1px solid #2373a8;
 }
 .addnewplus {
   font-size: 21px;
@@ -228,8 +228,11 @@ h3 {
 body {
   background: #eee;
   font-family: "Raleway", sans-serif;
-  padding: 0 0 50px 0;
+  
   color: #555;
+  
+  padding-bottom:120px;
+
 }
 
 .app {

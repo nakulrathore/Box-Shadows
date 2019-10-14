@@ -30,6 +30,11 @@ const shadows = [
 		"border": "0"
 	},
 	{
+		"name": "Udacity Testimonial",
+		"shadow": "0 0 4px 0 rgba(17,22,26,.16), 0 2px 4px 0 rgba(17,22,26,.08), 0 4px 8px 0 rgba(17,22,26,.08), 0 -3px #02b3e4",
+		"border": "0"
+	},
+	{
 		"name": "Angular",
 		"shadow": "0 6px 6px rgba(10,16,20,.15), 0 0 52px rgba(10,16,20,.12)",
 		"border": "0"
@@ -150,12 +155,11 @@ const shadows = [
 		"shadow": "5px 10px #888888",
 		"border": "1px solid"
 	},
-	
  	{
 		"name": "Floating Button",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
 		"border": "1px solid"
-    },
+        },
 	{
 		"name": "anime.to search",
 		"shadow": "0 0 10px 0 rgba(0, 0, 0, 0.15)",
@@ -215,12 +219,46 @@ const shadows = [
 	        "name": "Material Design - Google Calendar",
 	        "shadow": "0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12)",
 	        "border": "1px"
-        },
+    },
 	{
 		"name": "Inside Shadow",
 		"shadow": "inset 0 0 10px 0 rgba(95, 71, 71, 0.35)",
 		"border": "0"
-		
+    },
+    
+	{
+		"name": "npm - main buttons",
+		"shadow": "inset 4px 4px 0 #fff, 7px 7px 0 rgba(128, 83, 35, 0.2)",
+		"border": "3px solid #000"
+	},
+	{
+		"name": "Glitch - Main Window",
+		"shadow": "4px 4px #c3c3c3",
+		"border": "1px solid #c3c3c3"
+	},
+	{
+		"name": "Codementor - Feature Card",
+		"shadow": "0 6px 12px 0 rgba(51,51,51,0.1)",
+		"border": "1px solid #e8f5f9"
+	},
+	{
+		"name": "Netlify Sign Up",
+		"shadow": "0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12)",
+		"border": "0"
+	},
+	{
+		"name": "dimly lit hover shadow",
+		"shadow": "0 0 11px rgba(33,33,33,.2)",
+		"border": "1px solid #ccc"
+	},
+	{
+		"name": "Codepen Material design",
+		"shadow": " 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
+		"border": "0"
+    },
+		{"name": "Quicken Loans Shadow",
+		"shadow": "0 20px 30px 0 #e5e5e5",
+		"border": "2px solid #2081bf"
     },
     {
         "name": "Bulma.io",
@@ -229,7 +267,7 @@ const shadows = [
     },
     {
         "name": "Spectre.css",
-        "shadow": "0 .25rem 1rem rgba(48,55,66,.15)",
+        "shadow": "0 .25rem 1rem rgba(48,55,66,.15)", 
         "border": "0"
     },
     {
@@ -251,7 +289,6 @@ const shadows = [
         "name": "MaterializeCSS",
         "shadow": "0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)",
         "border": "0"
-    }
-
+	}
 ]
 export default shadows;
