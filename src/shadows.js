@@ -259,6 +259,11 @@ const shadows = [
 		"name": "Quicken Loans Shadow",
 		"shadow": "0 20px 30px 0 #e5e5e5",
 		"border": "2px solid #2081bf"
+{
+	        "name": "Cosmos World",
+	        "shadow": "0 21px 24px #DB4437", 
+                "border": "0", 
+
 	},
 ]
 export default shadows;
