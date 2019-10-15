@@ -256,9 +256,15 @@ const shadows = [
 		"shadow": " 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
 		"border": "0"
   },
+	{
 		"name": "Quicken Loans Shadow",
 		"shadow": "0 20px 30px 0 #e5e5e5",
 		"border": "2px solid #2081bf"
+	},
+	{
+		"name": "Amazon",
+		"shadow": " 0 2px 5px rgba(0,0,0,0.54), 0 12px 3px rgba(0,0,0,0.32)",
+		"border": "0"
 	},
 ]
 export default shadows;
