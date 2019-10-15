@@ -1,4 +1,4 @@
-[![Box-Shadows](./public/Box-Shadows_logo.png)](#logo)
+[![Box-Shadows](./public/imgs/Box-Shadows_logo.png)](#logo)
 
 **Box Shadows**
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
