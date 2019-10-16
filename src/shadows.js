@@ -318,6 +318,11 @@ const shadows = [
 		name:"Fury",
 		shadow:"0px 0px 10px 4px #e0e0e0",
 		border:"1px solid #daf1ff"
+  },
+  {
+		name:"Reddit",
+		shadow:"00px 17px 10px -10px #e0e0e0",
+		border:"1px solid #FF0000"
 	}
 ];
 export default shadows;
