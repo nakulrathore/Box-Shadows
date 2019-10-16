@@ -260,5 +260,10 @@ const shadows = [
 		"shadow": "0 20px 30px 0 #e5e5e5",
 		"border": "2px solid #2081bf"
 	},
+	{
+		"name": "AWS Solutions Box",
+		"shadow": "0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04)",
+		"border": "5px solid #232f3e"
+	},
 ]
 export default shadows;
