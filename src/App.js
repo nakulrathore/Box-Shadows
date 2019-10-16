@@ -23,7 +23,7 @@ class App extends Component {
   };
 
   handleOnChangeBackground = (value, togglePicker = false) => {
-    
+
     this.setState({
       background: value,
       picker: {...this.state.picker, enabled: !togglePicker}
@@ -50,6 +50,17 @@ class App extends Component {
     return list;
   };
 
+  /**
+  * Sort Box-Shadows by name ascending / descending
+  */
+  sortByName = (list, order='asc') => {
+    if (order == 'desc') {
+      return list.sort((a, b) => (a.name < b.name) ? 1 : -1)
+    }
+    // default to ascending order
+    return list.sort((a, b) => (a.name > b.name) ? 1 : -1)
+  }
+
   render() {
     const { background } = this.state;
     document.body.style.backgroundColor = background;
@@ -61,17 +72,17 @@ class App extends Component {
         <Title isDarkBackground={Color(background).isDark()}/>
         <GoogleBar />
         <div className="app">
-        {this.tagDuplicate(shadows).map((anObjectMapped, index) => {
+        {this.sortByName(this.tagDuplicate(shadows), 'asc').map((anObjectMapped, index) => {
             return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
           })}
         </div>
-       
+
         <ColorPicker status={this.state.picker} onColorChange={this.handleOnChangeBackground} />
 
         <PageFooter isDarkColorSelected={isDarkBackground}
                     title={'change background :'}
         >
-           
+
 
           <ColorList colors={backgroundColors}
                      selectedColor={background}
