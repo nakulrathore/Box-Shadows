@@ -261,9 +261,14 @@ const shadows = [
 		"border": "2px solid #2081bf"
 	},
 	{
+		"name": "gaana login box shadow",
+		"shadow": "1px 0px 11px 6px rgba(0,0,0,0.49)",
+		"border": "0"
+  },
+	{
 		"name": "AWS Solutions Box",
 		"shadow": "0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04)",
-		"border": "5px solid #232f3e"
+		"border": "1px solid #232f3e"
 	},
 ]
 export default shadows;
