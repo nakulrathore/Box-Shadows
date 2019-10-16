@@ -215,7 +215,7 @@ const shadows = [
     border: "0"
   },
   {
-    name: "Material Design - Google Calendar",
+    name: "Google Calendar",
     shadow: "0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12)",
     border: "1px"
   },
@@ -224,7 +224,11 @@ const shadows = [
     shadow: "inset 0 0 10px 0 rgba(95, 71, 71, 0.35)",
     border: "0"
   },
-
+  {
+    name: "Amazon Button",
+    shadow: " 0 2px 5px rgba(0,0,0,0.54), 0 12px 3px rgba(0,0,0,0.32)",
+    border: "0"
+  },
   {
     name: "npm - main buttons",
     shadow: "inset 4px 4px 0 #fff, 7px 7px 0 rgba(128, 83, 35, 0.2)",
@@ -255,7 +259,6 @@ const shadows = [
     shadow: " 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
     border: "0"
   },
-  { name: "Quicken Loans Shadow", shadow: "0 20px 30px 0 #e5e5e5", border: "2px solid #2081bf" },
   {
     name: "Bulma.io",
     shadow: "0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02)",
@@ -297,7 +300,7 @@ const shadows = [
     border: "0"
   },
   {
-    name: "gaana login box shadow",
+    name: "gaana login box",
     shadow: "1px 0px 11px 6px rgba(0,0,0,0.49)",
     border: "0"
   },
