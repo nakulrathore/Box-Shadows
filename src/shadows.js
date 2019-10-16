@@ -309,6 +309,11 @@ const shadows = [
     shadow: "0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04)",
     border: "1px solid #232f3e"
   },
+{
+    name: "Internet Explorer Box Shadow",
+    shadow: "5px 5px 5px rgba(68,68,68,0.6), rgb(68,68,68),",
+    border: "0"
+  },
   {
 		name:"Fury",
 		shadow:"0px 0px 10px 4px #e0e0e0",
