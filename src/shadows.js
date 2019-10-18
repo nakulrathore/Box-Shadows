@@ -315,19 +315,19 @@ const shadows = [
     border: "0"
   },
   {
-		name:"Fury",
-		shadow:"0px 0px 10px 4px #e0e0e0",
-		border:"1px solid #daf1ff"
+    name: "Fury",
+    shadow: "0px 0px 10px 4px #e0e0e0",
+    border: "1px solid #daf1ff"
   },
   {
-		name:"Reddit",
-		shadow:"00px 17px 10px -10px #e0e0e0",
-		border:"1px solid #FF0000"
-	},
+    name: "Reddit",
+    shadow: "00px 17px 10px -10px #e0e0e0",
+    border: "1px solid #FF0000"
+  },
   {
-	"name": "Youtube Search",
-	"shadow": "rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset",
-	"border": "0"
+    "name": "Youtube Search",
+    "shadow": "rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset",
+    "border": "0"
   }
 ];
 
