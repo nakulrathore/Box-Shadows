@@ -12,11 +12,11 @@
   border-radius: 3px;
   text-align: left;
   transform: scale(1);
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 0.2s;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 .bloc:hover {
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 .title {
   text-align: center;
