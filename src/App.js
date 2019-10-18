@@ -11,16 +11,55 @@ import backgroundColors from "./backgrounds";
 import shadows from "./shadows";
 import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
-
+import ColorPicker from "./components/ColorPicker";
 
 class App extends Component {
-  state = { background: "#FFFFFF" };
+  state = {
+    background: "#FFFFFF",
+    picker: {
+      enabled: false,
+      position: {x: 0 ,y: 0}
+    }
+  };
 
-  handleOnChangeBackground = value => {
+  handleOnChangeBackground = (value, togglePicker = false) => {
+
     this.setState({
-      background: value
+      background: value,
+      picker: {...this.state.picker, enabled: !togglePicker}
     });
   };
+
+  handleTogglePicker = mouse => {
+    let picker = this.state.picker;
+    this.setState({
+      picker: {enabled: !picker.enabled, position: mouse }
+    });
+  };
+
+  /**
+  * Search and tag duplicates for each Box-Shadows
+  */
+  tagDuplicate = list => {
+    list.forEach(shadow => {
+      const dup = list.find(s => s.shadow === shadow.shadow && s.name !== shadow.name);
+      if (dup && !dup.hasOwnProperty('duplicateOf')) {
+        dup['duplicateOf'] = shadow.name;
+      }
+    });
+    return list;
+  };
+
+  /**
+  * Sort Box-Shadows by name ascending / descending
+  */
+  sortByName = (list, order='asc') => {
+    if (order == 'desc') {
+      return list.sort((a, b) => (a.name < b.name) ? 1 : -1)
+    }
+    // default to ascending order
+    return list.sort((a, b) => (a.name > b.name) ? 1 : -1)
+  }
 
   render() {
     const { background } = this.state;
@@ -33,18 +72,24 @@ class App extends Component {
         <Title isDarkBackground={Color(background).isDark()}/>
         <GoogleBar />
         <div className="app">
-          {shadows.map((anObjectMapped, index) => {
+        {this.sortByName(this.tagDuplicate(shadows), 'asc').map((anObjectMapped, index) => {
             return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
           })}
         </div>
 
+        <ColorPicker status={this.state.picker} onColorChange={this.handleOnChangeBackground} />
+
         <PageFooter isDarkColorSelected={isDarkBackground}
                     title={'change background :'}
         >
+
+
           <ColorList colors={backgroundColors}
                      selectedColor={background}
                      isDarkColorSelected={isDarkBackground}
                      onColorChange={this.handleOnChangeBackground}
+                     onTogglePicker={this.handleTogglePicker}
+                     pickerStatus={this.state.picker.enabled}
           />
         </PageFooter>
       </div>
@@ -130,7 +175,7 @@ class Bloc extends Component {
       >
         <h2>{this.props.name}</h2>
         <br />
-        <CopyToClipboard text={"box-shadow:" + this.props.shadow + ";border:" + this.props.border} onCopy={this.copyThis.bind(this)}>
+        <CopyToClipboard text={`box-shadow:${this.props.shadow};border:${this.props.border};`} onCopy={this.copyThis.bind(this)}>
           <span className={this.state.value}>{this.state.value}</span>
         </CopyToClipboard>
         <div className="css-style">
