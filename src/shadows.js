@@ -327,7 +327,7 @@ const shadows = [
   {
     "name": "Youtube Search",
     "shadow": "rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset",
-    "border": "0"
+    "border": "1px solid rgb(204, 204, 204)"
   }
 ];
 
