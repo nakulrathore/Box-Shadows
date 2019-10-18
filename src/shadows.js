@@ -207,5 +207,10 @@ const shadows = [
 	"shadow": "rgba(0, 0, 0, 0.08) 0px 8px 28px",
 	"border": "0"
 	},
+	{
+	"name": "Youtube Search",
+	"shadow": "rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset",
+	"border": "0"
+	},
 ]
 export default shadows;
