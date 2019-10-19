@@ -256,5 +256,10 @@ const shadows = [
 		"shadow": " 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
 		"border": "0"
 	},
+	{
+		"name": "WebFx multiple shadow design",
+		"shadow": " -5px -5px 30px 5px #FF0000, 5px 5px 30px 5px #0000FF",
+		"border": "0"
+	},
 ]
 export default shadows;
