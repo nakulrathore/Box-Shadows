@@ -328,6 +328,6 @@ const shadows = [
     name:"Facebook Login Button",
     shadow:"0 3px 8px rgba(0, 0, 0, .3)",
     border:"0 solid" 
-  }	
+  },	
 ];
 export default shadows;
