@@ -1,10 +1,10 @@
 **Box Shadows**
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors)
 Handpicked Box-Shadows for Developers and Designers
 
 
 # Contribute
-###### Happy Hacktober! Want to add new Box-Shadow? 
+###### Happy Hacktober! Want to add a new Box-Shadow? 
 ###### If you're a beginner and looking for your first contribution. please follow these steps:-
 
 #### All the Box-Shadows are loaded in a single file : [shadows.js](https://github.com/nakulrathore/Box-Shadows/blob/master/src/shadows.js)  in the [src](https://github.com/nakulrathore/Box-Shadows/tree/master/src) directory.
@@ -21,15 +21,15 @@ Handpicked Box-Shadows for Developers and Designers
  
 
     {
-    	"name": "NAME-HERE",
-    	"shadow": "BOX-SHADOW-CSS-HERE",
-    	"border": "BORDER-CSS-HERE"
+        "name": "NAME-HERE",
+        "shadow": "BOX-SHADOW-CSS-HERE",
+        "border": "BORDER-CSS-HERE"
     },
 
 
  [4] Paste it at the End of array in shadows.js -- **just before ]**
  
- [5] Fill the Input to Propose new Changes EX: *Added spotify login box shadow* then Proceed the Submit Pull-Request
+ [5] Fill the Input to Propose new Changes EX: *Added Spotify login box-shadow* then Proceed the Submit Pull-Request
 
 
 
@@ -40,7 +40,7 @@ Handpicked Box-Shadows for Developers and Designers
 ## Method 2. (Fork)
 
 ### Note :
-#### Before contributing to this project plese read the ISSUE and then start to contribute for that issue.
+#### Before contributing to this project please read the ISSUE and then start to contribute for that issue.
 
 
 # Instructions :
@@ -51,14 +51,14 @@ Handpicked Box-Shadows for Developers and Designers
 
 ### 2. Clone the Repository
 
-###### To make your own local copy of the repository you would like to contribute.
+###### To make your local copy of the repository you would like to contribute.
 
 ###### use the `git clone`  command along with the URL that points to your fork of the repository.
 
 
 ### 3. Create a New Branch
 
-##### use the `git branch new-branch` command for create a new branch.
+##### use the `git branch new-branch` command to create a new branch.
 
 ###### Now that our new branch is created, we can switch to make sure that we are working on that branch by using the git checkout command:
 
@@ -80,10 +80,10 @@ Handpicked Box-Shadows for Developers and Designers
 ###### Now navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page. 
 #### Done ! you have made a pull request and wait for approved by the maintainers.
 
-## Please feel free to request pull any improvements you want to contribute.
+## Please feel free to request-pull any improvements you want to contribute.
 
 
-LICENSE : MIT
+LICENSE: MIT
 
 ## Contributors ✨
 
@@ -106,6 +106,6 @@ Thanks goes to these wonderful people:
   </tr>
 </table>
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- ALL-CONTRIBUTORS-LIST: END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
