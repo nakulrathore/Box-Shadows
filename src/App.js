@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Color from "color";
+import githubIcon from './assets/github_icon.png'
 
 //Module Imports
 import "./App.css";
@@ -80,7 +81,7 @@ class App extends Component {
         <ColorPicker status={this.state.picker} onColorChange={this.handleOnChangeBackground} />
 
         <PageFooter isDarkColorSelected={isDarkBackground}
-                    title={'change background :'}
+                    title={'change background '}
         >
 
 
@@ -103,8 +104,7 @@ const Title = ({isDarkBackground}) => {
       <h1>Box Shadows</h1>
       <p className="subtitle" style={isDarkBackground ? {color: Color('#777').negate()}: {}}>Handpicked Box Shadows</p>
       <a className="addnew" target="_blank" rel="noopener noreferrer" href="https://github.com/nakulrathore/Box-Shadows#contribute">
-        <span className="addnewplus">+</span>
-        Add New
+        <img className="github-icon" src={githubIcon} alt=""/> Add new shadow
       </a>
     </div>
   );

@@ -12,29 +12,39 @@
   border-radius: 3px;
   text-align: left;
   transform: scale(1);
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .bloc:hover {
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .title {
   text-align: center;
-  margin: 10px auto;
+  font-size: 22px;
+  /* margin: 10px auto; */
   color: #444;
 }
 .subtitle {
-  font-size: 14px;
+  font-size: 18px;
+  margin: 10px auto;
   color: #6e6e6e;
 }
 .addnew {
-  font-size: 12px;
+  font-size: 15px;
   text-decoration: none;
-  color: #2373a8;
+  color: #333;
   padding: 5px;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  box-shadow:0 0 8px 0 rgba(0,0,0,.32);border:0;
+}
+.github-icon{
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
 }
 .addnew:hover {
-  border-bottom: 1px solid #2373a8;
+  box-shadow:0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2);border:0;
 }
 .addnewplus {
   font-size: 21px;
@@ -70,8 +80,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
+  padding-left: 10px;
   background: rgba(189, 195, 199, 0.3);
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -83,7 +93,11 @@ p {
   font-size: 14px;
   font-weight: normal;
   text-transform: capitalize;
-;
+}
+
+.bg-colors{
+  display: flex;
+  margin: 10px;
 }
 
 .color-list {
