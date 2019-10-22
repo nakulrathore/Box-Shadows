@@ -309,7 +309,7 @@ const shadows = [
     shadow: "0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04)",
     border: "1px solid #232f3e"
   },
-{
+  {
     name: "Internet Explorer Box Shadow",
     shadow: "5px 5px 5px rgba(68,68,68,0.6), rgb(68,68,68),",
     border: "0"
@@ -325,19 +325,24 @@ const shadows = [
     border: "1px solid #FF0000"
   },
   {
-	  name:"Reddit",
-		shadow:"00px 17px 10px -10px #e0e0e0",
-		border:"1px solid #FF0000"
+    name: "Reddit",
+    shadow: "00px 17px 10px -10px #e0e0e0",
+    border: "1px solid #FF0000"
   },
   {
-    name:"Facebook Login Button",
-    shadow:"0 3px 8px rgba(0, 0, 0, .3)",
-    border:"0 solid" 
+    name: "Facebook Login Button",
+    shadow: "0 3px 8px rgba(0, 0, 0, .3)",
+    border: "0 solid"
   },
-   {
-    "name": "Youtube Search",
-    "shadow": "rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset",
-    "border": "1px solid rgb(204, 204, 204)"
+  {
+    name: "Youtube Search",
+    shadow: "rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset",
+    border: "1px solid rgb(204, 204, 204)"
+  },
+  {
+    name: "WebFx multiple shadow design",
+    shadow: "-5px -5px 30px 5px #FF0000, 5px 5px 30px 5px #0000FF",
+    border: "0"
   }
 ];
 
