@@ -94,6 +94,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ps0305",
+      "name": "Pankaj Singh",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34129569?v=4",
+      "profile": "https://ps0305.github.io/",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
