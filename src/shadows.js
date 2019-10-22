@@ -341,7 +341,7 @@ const shadows = [
   },
   {
     name: "WebFx multiple shadow design",
-    shadow: " -5px -5px 30px 5px #FF0000, 5px 5px 30px 5px #0000FF",
+    shadow: "-5px -5px 30px 5px #FF0000, 5px 5px 30px 5px #0000FF",
     border: "0"
   }
 ];
