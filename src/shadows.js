@@ -359,6 +359,11 @@ const shadows = [
     shadow: "0px 50px 100px rgba(0,0,0,0.2)",
     border: "0"
   },
+  {
+    name: "Slack homepage",
+    shadow: "0 1rem 2rem rgba(0,0,0,.1)",
+    border: "0"
+  },
 ];
 
 export default shadows;
