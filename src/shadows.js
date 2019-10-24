@@ -369,6 +369,11 @@ const shadows = [
     shadow: "inset 0 1px 0 #66bfff",
     border: "1px solid #07c"
   },
+  {
+    name: "CallOfDuty homepage button",
+    shadow: "inset 0px 0px 5px #81898c",
+    border: "1px solid #81898c"
+  },
 ];
 
 export default shadows;
