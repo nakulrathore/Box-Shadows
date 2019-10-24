@@ -364,6 +364,11 @@ const shadows = [
     shadow: "0 1rem 2rem rgba(0,0,0,.1)",
     border: "0"
   },
+  {
+    name: "Stackoverflow signup",
+    shadow: "inset 0 1px 0 #66bfff",
+    border: "1px solid #07c"
+  },
 ];
 
 export default shadows;
