@@ -349,6 +349,11 @@ const shadows = [
     shadow: "0px 2px 10px rgba(0, 0, 0, 0.2)",
     border: " 1px solid #e6e6e6"
   },
+  {
+    name: "Auth0 homepage",
+    shadow: "rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem",
+    border: "0"
+  },
 ];
 
 export default shadows;
