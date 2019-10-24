@@ -379,6 +379,11 @@ const shadows = [
     shadow: "0 3px 2px #bbb",
     border: "1px solid #bbb"
   },
+  {
+    name: "LinkedIn signin",
+    shadow: "inset 0 0 0 1px #0073b1, inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 1px rgba(0,0,0,0)",
+    border: "0"
+  },
 ];
 
 export default shadows;
