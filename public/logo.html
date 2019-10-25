@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Logo</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.contain {
+			margin: 50px;
+		}
+		.box {
+			background: rgba(198, 81, 1);
+			height: 90px;
+			width: 90px;
+			border-radius: 3px;
+			border-top-right-radius: 25px;
+			border-bottom-left-radius: 25px;
+			position: relative;
+			text-align: center;
+		}
+		.shadow {
+  			box-shadow: 5px 5px rgba(198, 81, 1, 0.4),
+              10px 10px rgba(198, 81, 1, 0.3),
+              15px 15px rgba(198, 81, 1, 0.2),
+              20px 20px rgba(198, 81, 1, 0.1),
+              25px 25px rgba(198, 81, 1, 0.05);
+            border-radius: 3px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+		}
+		.text {
+			margin: 0;
+			color: #f9f9f9;
+			font-family: 'Lato', sans-serif;
+			font-size: 50px;
+		    position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div class="contain">
+		<div class="box">
+			<div class="box shadow"></div>
+			<p class="text">BS</p>
+		</div>
+	</div>
+</body>
+</html>
