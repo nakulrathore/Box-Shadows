@@ -32,11 +32,12 @@
   font-size: 15px;
   text-decoration: none;
   color: #333;
+  background-color: #fafafa;
   padding: 5px;
   padding: 5px 10px;
   transition: all 0.2s ease;
-  border-radius: 4px;
-  box-shadow:0 0 8px 0 rgba(0,0,0,.32);border:0;
+  border-radius: 2px;
+  /* box-shadow:0 0 8px 0 rgba(0,0,0,.32);border:0; */
 }
 .github-icon{
   height: 20px;
@@ -44,7 +45,7 @@
   vertical-align: bottom;
 }
 .addnew:hover {
-  box-shadow:0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2);border:0;
+  background-color: #eee;
 }
 .addnewplus {
   font-size: 21px;
@@ -203,7 +204,7 @@ p {
   box-sizing: border-box;
   padding: 1px 9px 16px;
   font-size: 11px;
-  margin: 70px auto;
+  margin: 50px auto;
 }
 h3 {
   display: inline-block;
@@ -259,6 +260,78 @@ body {
 .googlebarcode {
   font-size: 10px;
 }
+
+
+
+/* style for logo  */
+/* .logo-container {
+  margin: 50px;
+}
+.box {
+  background: rgb(255, 68, 55);
+  height: 90px;
+  width: 90px;
+  border-radius: 2px;
+  position: relative;
+  text-align: center;
+}
+.shadow {
+    box-shadow: 5px 5px rgba(255, 68, 55, 0.4),
+          10px 10px rgba(255, 68, 55, 0.3),
+          15px 15px rgba(255, 68, 55, 0.2),
+          20px 20px rgba(255, 68, 55, 0.1),
+          25px 25px rgba(255, 68, 55, 0.05);
+        border-radius: 2px;
+}
+.border {
+  transform: translate(6px, 6px);
+  width: 80%;
+  height: 80%;
+  border: 3px solid #f9f9f9;
+}
+.logo-text {
+  margin: 0;
+  color: #f9f9f9;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.logo-text > span {
+  font-size: 18px
+} */
+/* style for logo  */
+
+
+
+.logo{
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto 30px auto;
+  /* font-weight: 600; */
+  border: 5px solid rgba(52, 73, 94, 1);
+  box-shadow: 5px 5px rgba(52, 73, 94, 0.4),
+          10px 10px rgba(52, 73, 94, 0.3),
+          15px 15px rgba(52, 73, 94, 0.2),
+          20px 20px rgba(52, 73, 94, 0.1),
+          25px 25px rgba(52, 73, 94, 0.05);
+        border-radius: 2px;
+}
+
+/* style for logo  */
+
+
+
 
 @media only screen and (max-width: 400px) {
   .bloc {
