@@ -335,11 +335,6 @@ const shadows = [
     border: "1px solid rgb(204, 204, 204)"
   },
   {
-    name: "WebFx multiple shadow design",
-    shadow: "-5px -5px 30px 5px #FF0000, 5px 5px 30px 5px #0000FF",
-    border: "0"
-  },
-  {
     name: "Zapier homepage",
     shadow: "0px 2px 10px rgba(0, 0, 0, 0.2)",
     border: " 1px solid #e6e6e6"
