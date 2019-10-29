@@ -335,6 +335,11 @@ const shadows = [
     border: "1px solid rgb(204, 204, 204)"
   },
   {
+    name: "whatsapp web dropdown",
+    shadow: "0 2px 5px 0 rgba(0,0,0,0.26), 0 2px 10px 0 rgba(0,0,0,0.16)",
+    border: "0"
+  },
+  {
     name: "Zapier homepage",
     shadow: "0px 2px 10px rgba(0, 0, 0, 0.2)",
     border: " 1px solid #e6e6e6"
