@@ -65,11 +65,6 @@ const shadows = [
     border: "0"
   },
   {
-    name: "whatsapp web dropdown",
-    shadow: "0 2px 5px 0 rgba(0,0,0,0.26), 0 2px 10px 0 rgba(0,0,0,0.16)",
-    border: "0"
-  },
-  {
     name: "testmysite.io",
     shadow: "0 0 25px rgba(0,0,0,.05)",
     border: "1px solid #f1f4ff"
