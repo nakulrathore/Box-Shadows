@@ -379,6 +379,11 @@ const shadows = [
     shadow: "inset 0 0 0 1px #0073b1, inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 1px rgba(0,0,0,0)",
     border: "0"
   },
+  {
+    name: "Facebook signUp",
+    shadow: "inset 0 1px 1px #a4e388",
+    border: "1px solid"
+  },
 ];
 
 export default shadows;
