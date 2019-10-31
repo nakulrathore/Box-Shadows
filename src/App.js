@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Color from "color";
-import githubIcon from "./assets/github_icon.png";
 
-//Module Imports
 import "./App.css";
 
-//Data Imports
 import backgroundColors from "./backgrounds";
 import shadows from "./shadows";
 import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
 import ColorPicker from "./components/ColorPicker";
+
+import githubIcon from "./assets/github_icon.png";
 
 class App extends Component {
   state = {
