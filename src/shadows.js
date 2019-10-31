@@ -320,11 +320,6 @@ const shadows = [
     border: "1px solid #FF0000"
   },
   {
-    name: "Reddit",
-    shadow: "00px 17px 10px -10px #e0e0e0",
-    border: "1px solid #FF0000"
-  },
-  {
     name: "Facebook Login Button",
     shadow: "0 3px 8px rgba(0, 0, 0, .3)",
     border: "0 solid"
