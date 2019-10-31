@@ -52,7 +52,7 @@ class App extends Component {
    * Sort Box-Shadows by name ascending / descending
    */
   sortByName = (list, order = "asc") => {
-    if (order == "desc") {
+    if (order === "desc") {
       return list.sort((a, b) => (a.name < b.name ? 1 : -1));
     }
     // default to ascending order

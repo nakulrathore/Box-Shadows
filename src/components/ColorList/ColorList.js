@@ -1,5 +1,4 @@
 import React from "react";
-import Color from "color";
 import COLORS from "../../colors";
 import ReactTooltip from "react-tooltip";
 
