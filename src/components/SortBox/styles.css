@@ -1,0 +1,32 @@
+.sort-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 64px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.06);
+  box-sizing: border-box;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 15px;
+}
+
+.sort-box__icon {
+  height: 40px;
+  width: 40px;
+}
+.sort-box__icon > svg {
+  color: grey;
+  fill: currentColor;
+}
+
+.sort-box__dropdown {
+  border: none;
+  height: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 8px;
+}
+.sort-box__dropdown:focus {
+  outline: none;
+}

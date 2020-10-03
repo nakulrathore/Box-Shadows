@@ -9,6 +9,8 @@
   box-shadow: 0px 8px 20px rgba(0,0,0,0.06);
   box-sizing: border-box;
   padding: 0 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .search__icon {

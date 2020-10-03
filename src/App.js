@@ -21,7 +21,8 @@ class App extends Component {
       enabled: false,
       position: { x: 0, y: 0 }
     },
-    search: ''
+    search: '',
+    sort: 'asc'
   };
 
   handleOnChangeBackground = (value, togglePicker = false) => {
@@ -41,6 +42,12 @@ class App extends Component {
   handleSearchChange = text => {
     this.setState({
       search: text
+    })
+  }
+
+  handleSortChange = value => {
+    this.setState({
+      sort: value
     })
   }
 
@@ -82,18 +89,20 @@ class App extends Component {
   }
 
   render() {
-    const { background, search } = this.state;
+    const { background, search, sort } = this.state;
     document.body.style.backgroundColor = background;
 
     const isDarkBackground = Color(background).isDark();
-    const sortedList = this.sortByName(this.tagDuplicate(shadows), "asc");
+    const sortedList = this.sortByName(this.tagDuplicate(shadows), sort);
     const filteredList = this.filterBySearch(sortedList, search);
     return (
       <div>
         <Title isDarkBackground={Color(background).isDark()} />
         <SearchFilterBox
           onSearchChange={this.handleSearchChange}
+          onSortChange={this.handleSortChange}
           searchText={this.state.search}
+          sortValue={sort}
         />
         <Divider />
         <GoogleBar />
