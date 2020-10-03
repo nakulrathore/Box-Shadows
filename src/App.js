@@ -9,6 +9,8 @@ import shadows from "./shadows";
 import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
 import ColorPicker from "./components/ColorPicker";
+import Divider from "./components/Divider/Divider";
+import SearchFilterBox from "./components/SearchFilterBox/SearchFilterBox";
 
 import githubIcon from "./assets/github_icon.png";
 
@@ -18,7 +20,8 @@ class App extends Component {
     picker: {
       enabled: false,
       position: { x: 0, y: 0 }
-    }
+    },
+    search: ''
   };
 
   handleOnChangeBackground = (value, togglePicker = false) => {
@@ -34,6 +37,12 @@ class App extends Component {
       picker: { enabled: !picker.enabled, position: mouse }
     });
   };
+
+  handleSearchChange = text => {
+    this.setState({
+      search: text
+    })
+  }
 
   /**
    * Search and tag duplicates for each Box-Shadows
@@ -68,6 +77,11 @@ class App extends Component {
     return (
       <div>
         <Title isDarkBackground={Color(background).isDark()} />
+        <SearchFilterBox
+          onSearchChange={this.handleSearchChange}
+          searchText={this.state.search}
+        />
+        <Divider />
         <GoogleBar />
         <div className="app">
           {this.sortByName(this.tagDuplicate(shadows), "asc").map((anObjectMapped, index) => {
