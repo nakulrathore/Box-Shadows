@@ -147,7 +147,13 @@ class App extends Component {
           onChange={this.handleBrandChange}
         />
         <Divider />
-        <GoogleBar />
+
+        {
+          (search === '' || search.toLowerCase().includes('google'))
+          && (brands.length === 0 || brands.includes('Google'))
+          && <GoogleBar />
+        }
+
         <div className="app">
           {filteredList.map((anObjectMapped, index) => {
             return (
