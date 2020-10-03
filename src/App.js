@@ -10,7 +10,7 @@ import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
 import ColorPicker from "./components/ColorPicker";
 import Divider from "./components/Divider/Divider";
-import SearchFilterBox from "./components/SearchFilterBox/SearchFilterBox";
+import SearchFilterBox from "./components/SearchBox/SearchBox";
 
 import githubIcon from "./assets/github_icon.png";
 
