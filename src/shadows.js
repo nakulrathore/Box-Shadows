@@ -389,5 +389,10 @@ const shadows = [
     shadow: "0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18)",
     border: "1px solid transparent"
   },
+  {
+    "name": "Dribbble Searchbox",
+    "shadow": "0px 8px 20px rgba(0,0,0,0.06)",
+    "border": "0"
+  },
 ];
 export default shadows;
