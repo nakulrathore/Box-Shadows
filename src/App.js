@@ -10,7 +10,8 @@ import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
 import ColorPicker from "./components/ColorPicker";
 import Divider from "./components/Divider/Divider";
-import SearchFilterBox from "./components/SearchBox/SearchBox";
+import SearchBox from "./components/SearchBox/SearchBox";
+import FilterBox from "./components/FilterBox/FilterBox";
 
 import githubIcon from "./assets/github_icon.png";
 
@@ -22,8 +23,15 @@ class App extends Component {
       position: { x: 0, y: 0 }
     },
     search: '',
-    sort: 'asc'
+    sort: 'asc',
+    brands: []
   };
+
+  brands = [
+    'Facebook',
+    'Google',
+    'LinkedIn'
+  ]
 
   handleOnChangeBackground = (value, togglePicker = false) => {
     this.setState({
@@ -48,6 +56,24 @@ class App extends Component {
   handleSortChange = value => {
     this.setState({
       sort: value
+    })
+  }
+
+  /** 
+   * Add new brand to the list if it is not existed or remove it if exists
+   */
+  handleBrandChange = brand => {
+    const brandIdx = this.state.brands.indexOf(brand);
+    let newBrands = [...this.state.brands];
+
+    if (brandIdx > -1) {
+      newBrands.splice(brandIdx, 1);
+    } else {
+      newBrands = [...this.state.brands, brand];
+    }
+
+    this.setState({
+      brands: newBrands
     })
   }
 
@@ -88,21 +114,37 @@ class App extends Component {
     });
   }
 
+  filterByBrands = (list, brands = []) => {
+    if (brands.length === 0) return list;
+
+    const lBrands = brands.map(brand => brand.toLowerCase());
+    return list.filter(shadow => {
+      const lName = shadow.name.toLowerCase();
+      return lBrands.some(brand => lName.includes(brand));
+    });
+  }
+
   render() {
-    const { background, search, sort } = this.state;
+    const { background, search, sort, brands } = this.state;
     document.body.style.backgroundColor = background;
 
     const isDarkBackground = Color(background).isDark();
     const sortedList = this.sortByName(this.tagDuplicate(shadows), sort);
-    const filteredList = this.filterBySearch(sortedList, search);
+    const filteredSearch = this.filterBySearch(sortedList, search);
+    const filteredList = this.filterByBrands(filteredSearch, brands);
     return (
       <div>
         <Title isDarkBackground={Color(background).isDark()} />
-        <SearchFilterBox
+        <SearchBox
           onSearchChange={this.handleSearchChange}
           onSortChange={this.handleSortChange}
           searchText={this.state.search}
           sortValue={sort}
+        />
+        <FilterBox
+          brands={this.brands}
+          selected={brands}
+          onChange={this.handleBrandChange}
         />
         <Divider />
         <GoogleBar />
