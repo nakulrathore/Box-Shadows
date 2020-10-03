@@ -68,12 +68,26 @@ class App extends Component {
     return list.sort((a, b) => (a.name > b.name ? 1 : -1));
   };
 
+  /** 
+   * Filter Box-Shadows' name by text value
+   */
+  filterBySearch = (list, text = "") => {
+    if (text === "") return list;
+
+    const lText = text.toLowerCase();
+    return list.filter(shadow => {
+      const lName = shadow.name.toLowerCase();
+      return lName.includes(lText);
+    });
+  }
+
   render() {
-    const { background } = this.state;
+    const { background, search } = this.state;
     document.body.style.backgroundColor = background;
 
     const isDarkBackground = Color(background).isDark();
-
+    const sortedList = this.sortByName(this.tagDuplicate(shadows), "asc");
+    const filteredList = this.filterBySearch(sortedList, search);
     return (
       <div>
         <Title isDarkBackground={Color(background).isDark()} />
@@ -84,7 +98,7 @@ class App extends Component {
         <Divider />
         <GoogleBar />
         <div className="app">
-          {this.sortByName(this.tagDuplicate(shadows), "asc").map((anObjectMapped, index) => {
+          {filteredList.map((anObjectMapped, index) => {
             return (
               <Bloc
                 shadow={anObjectMapped.shadow}
