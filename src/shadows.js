@@ -429,5 +429,10 @@ const shadows = [
       "0 5px rgba(93, 64, 55, 0.4), 0 10px rgba(93, 64, 55, 0.3), 0 15px rgba(93, 64, 55, 0.2), 0 20px rgba(93, 64, 55, 0.1), 0 25px rgba(93, 64, 55, 0.05), -5px 5px 40px rgba(100, 0, 0, 0.4);",
     border: "0",
   },
+  {
+    name: "Starbucks",
+    shadow: "0 11px 15px 0 rgba(0, 0, 0, 0.1), 0 9px 46px 8px rgba(0, 0, 0, 0.06), 0 24px 38px 3px rgba(0, 0, 0, 0.07)",
+    border: "1.5px solid rgba(0, 0, 0, .12)"
+  }
 ];
 export default shadows;
