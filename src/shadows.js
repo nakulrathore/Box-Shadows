@@ -116,7 +116,7 @@ const shadows = [
 		"shadow": "0 2px 5px 0 rgba(0, 0, 0, 0.225)",
 		"border": "0"
 	},
-  {
+  	{
 
 		"name": "A Nice Simple Shadow",
 		"shadow": "0px 17px 10px -10px rgba(0,0,0,0.4)",
@@ -126,6 +126,11 @@ const shadows = [
 		"name": "Android 10 Highlights Box Shadow",
 		"shadow": "4px 12px 47px 0 rgba(0,0,0,.1)",
 		"border": "0"
+	},
+	{
+		"name": "Digital Ocean box",
+		"shadow": "0 2px 4px rgba(1,14,40,.05);",
+		"border": "1px solid #e5e5e5"
 	},
 ]
 
