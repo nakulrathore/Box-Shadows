@@ -1,41 +1,111 @@
-
 import React, { Component } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Color from "color";
 
-//Module Imports
 import "./App.css";
 
-//Data Imports
 import backgroundColors from "./backgrounds";
 import shadows from "./shadows";
+import PageFooter from "./components/PageFooter/PageFooter";
+import ColorList from "./components/ColorList/ColorList";
+import ColorPicker from "./components/ColorPicker";
 
+import githubIcon from "./assets/github_icon.png";
 
 class App extends Component {
+  state = {
+    background: "#FFFFFF",
+    picker: {
+      enabled: false,
+      position: { x: 0, y: 0 }
+    }
+  };
+
+  handleOnChangeBackground = (value, togglePicker = false) => {
+    this.setState({
+      background: value,
+      picker: { ...this.state.picker, enabled: !togglePicker }
+    });
+  };
+
+  handleTogglePicker = mouse => {
+    let picker = this.state.picker;
+    this.setState({
+      picker: { enabled: !picker.enabled, position: mouse }
+    });
+  };
+
+  /**
+   * Search and tag duplicates for each Box-Shadows
+   */
+  tagDuplicate = list => {
+    list.forEach(shadow => {
+      const dup = list.find(s => s.shadow === shadow.shadow && s.name !== shadow.name);
+      if (dup && !dup.hasOwnProperty("duplicateOf")) {
+        dup["duplicateOf"] = shadow.name;
+      }
+    });
+    return list;
+  };
+
+  /**
+   * Sort Box-Shadows by name ascending / descending
+   */
+  sortByName = (list, order = "asc") => {
+    if (order === "desc") {
+      return list.sort((a, b) => (a.name < b.name ? 1 : -1));
+    }
+    // default to ascending order
+    return list.sort((a, b) => (a.name > b.name ? 1 : -1));
+  };
+
   render() {
+    const { background } = this.state;
+    document.body.style.backgroundColor = background;
+
+    const isDarkBackground = Color(background).isDark();
+
     return (
       <div>
-        <Title />
+        <Title isDarkBackground={Color(background).isDark()} />
         <GoogleBar />
         <div className="app">
-          {shadows.map((anObjectMapped, index) => {
-            return <Bloc shadow={anObjectMapped.shadow} border={anObjectMapped.border} name={anObjectMapped.name} key={index} />;
+          {this.sortByName(this.tagDuplicate(shadows), "asc").map((anObjectMapped, index) => {
+            return (
+              <Bloc
+                shadow={anObjectMapped.shadow}
+                border={anObjectMapped.border}
+                name={anObjectMapped.name}
+                key={index}
+              />
+            );
           })}
         </div>
-        <ColorButts />
+
+        <ColorPicker status={this.state.picker} onColorChange={this.handleOnChangeBackground} />
+
+        <PageFooter isDarkColorSelected={isDarkBackground} title={"change background "}>
+          <ColorList
+            colors={backgroundColors}
+            selectedColor={background}
+            isDarkColorSelected={isDarkBackground}
+            onColorChange={this.handleOnChangeBackground}
+            onTogglePicker={this.handleTogglePicker}
+            pickerStatus={this.state.picker.enabled}
+          />
+        </PageFooter>
       </div>
     );
   }
 }
 
-const Title = props => {
+const Title = ({isDarkBackground}) => {
   return (
-    <div className="title">
-      <h1>Box Shadows</h1>
-      <p className="subtitle">Handpicked Box Shadows</p>
+    <div className="title" style={isDarkBackground ? {color: Color('#444').negate()}: {}}>
+      <div className="logo" title="Handpicked Box Shadows">Box Shadows</div>
+      {/* <p className="subtitle" style={isDarkBackground ? {color: Color('#777').negate()}: {}}>Handpicked Box Shadows</p> */}
       <a className="addnew" target="_blank" rel="noopener noreferrer" href="https://github.com/nakulrathore/Box-Shadows#contribute">
-        <span className="addnewplus">+</span>
-        Add New
+        <img className="github-icon" src={githubIcon} alt=""/> Submit new shadow
       </a>
     </div>
   );
@@ -60,8 +130,13 @@ class GoogleBar extends Component {
     return (
       <div className="googlebar">
         <h3>Google Search</h3>
-        <span className="googlebarcode">box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);</span>
-        <CopyToClipboard text={"box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);"} onCopy={this.copyThis.bind(this)}>
+        <span className="googlebarcode">
+          box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+        </span>
+        <CopyToClipboard
+          text={"box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);"}
+          onCopy={this.copyThis.bind(this)}
+        >
           <span className={this.state.value}>{this.state.value}</span>
         </CopyToClipboard>
         <div className="searchicon">
@@ -105,7 +180,10 @@ class Bloc extends Component {
       >
         <h2>{this.props.name}</h2>
         <br />
-        <CopyToClipboard text={"box-shadow:" + this.props.shadow + ";border:" + this.props.border} onCopy={this.copyThis.bind(this)}>
+        <CopyToClipboard
+          text={`box-shadow:${this.props.shadow};border:${this.props.border};`}
+          onCopy={this.copyThis.bind(this)}
+        >
           <span className={this.state.value}>{this.state.value}</span>
         </CopyToClipboard>
         <div className="css-style">
@@ -113,42 +191,6 @@ class Bloc extends Component {
           <p>border:{this.props.border};</p>
         </div>
       </div>
-    );
-  }
-}
-
-class ColorButts extends Component {
-  state = { background: "#FFFFFF" };
-
-  changeBackground = value => {
-    this.setState({
-      background: value
-    });
-  };
-
-  render() {
-    document.body.style.backgroundColor = this.state.background;
-    return (
-      <ul className="ColorButts">
-        change background :
-        {backgroundColors.map((bg, index) => {
-          const colorButtsStyle = {
-            background: bg.color,
-            color: Color(bg.color).isDark() ? "#FFF" : "#000"
-          };
-
-          return (
-            <li
-              key={index}
-              onClick={this.changeBackground.bind(this, bg.color)}
-              className={this.state.background === bg.color ? "selected" : ""}
-              style={colorButtsStyle}
-            >
-              {bg.color}
-            </li>
-          );
-        })}
-      </ul>
     );
   }
 }
