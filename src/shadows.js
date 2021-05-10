@@ -433,6 +433,11 @@ const shadows = [
     name: "Starbucks",
     shadow: "0 11px 15px 0 rgba(0, 0, 0, 0.1), 0 9px 46px 8px rgba(0, 0, 0, 0.06), 0 24px 38px 3px rgba(0, 0, 0, 0.07)",
     border: "1.5px solid rgba(0, 0, 0, .12)"
-  }
+  },
+  {
+    name: "Disney +",
+    shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)",
+    border: "1px solid rgba(151, 151, 151, 0.34)"
+  },
 ];
 export default shadows;
