@@ -27,7 +27,7 @@ Handpicked Box-Shadows for Developers and Designers
     },
 
 
- [4] Paste it at the End of array in shadows.js -- **just before ]**
+ [4] Paste it at the End of array in shadows.js -- **just before `]`** 
  
  [5] Fill the Input to Propose new Changes EX: *Added Spotify login box-shadow* then Proceed the Submit Pull-Request
 
