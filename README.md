@@ -15,7 +15,7 @@ Handpicked Box-Shadows for Developers and Designers
 
  [1] Go to file [shadows.js](https://github.com/nakulrathore/Box-Shadows/blob/master/src/shadows.js)
  
- [2] Click on Edit 🖉
+ [2] Click on Edit ✎
  
  [3] Copy below code and Edit all three keys (*notice comma at the end*)
  
