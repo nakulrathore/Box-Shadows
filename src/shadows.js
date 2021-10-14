@@ -161,7 +161,7 @@ const shadows = [
     border: "1px solid",
   },
   {
-    name: "anime.to search",
+    name: "Anime.to search",
     shadow: "0 0 10px 0 rgba(0, 0, 0, 0.15)",
     border: "0",
   },
@@ -197,7 +197,7 @@ const shadows = [
     border: "0",
   },
   {
-    name: "bitbucket",
+    name: "Bitbucket",
     shadow:
       "0 1px 1px rgba(38,132,255,.2), 1px 0 0 rgba(38,132,255,.1), -1px 0 0 rgba(0,81,206,.1)",
     border: "0",
@@ -235,7 +235,7 @@ const shadows = [
     border: "0",
   },
   {
-    name: "npm - main buttons",
+    name: "npm - Button",
     shadow: "inset 4px 4px 0 #fff, 7px 7px 0 rgba(128, 83, 35, 0.2)",
     border: "3px solid #000",
   },
@@ -255,12 +255,12 @@ const shadows = [
     border: "0",
   },
   {
-    name: "dimly lit hover shadow",
+    name: "Dimly Lit",
     shadow: "0 0 11px rgba(33,33,33,.2)",
     border: "1px solid #ccc",
   },
   {
-    name: "Codepen Material design",
+    name: "Codepen Material Design",
     shadow: " 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
     border: "0",
   },
@@ -306,7 +306,7 @@ const shadows = [
     border: "0",
   },
   {
-    name: "gaana login box",
+    name: "gaana.com Login Box",
     shadow: "1px 0px 11px 6px rgba(0,0,0,0.49)",
     border: "0",
   },
@@ -316,7 +316,7 @@ const shadows = [
     border: "1px solid #232f3e",
   },
   {
-    name: "Internet Explorer Box Shadow",
+    name: "Internet Explorer",
     shadow: "5px 5px 5px rgba(68,68,68,0.6), rgb(68,68,68),",
     border: "0",
   },
@@ -341,38 +341,38 @@ const shadows = [
     border: "1px solid rgb(204, 204, 204)",
   },
   {
-    name: "whatsapp web dropdown",
+    name: "whatsappWeb Dropdown",
     shadow: "0 2px 5px 0 rgba(0,0,0,0.26), 0 2px 10px 0 rgba(0,0,0,0.16)",
     border: "0",
   },
   {
-    name: "Zapier homepage",
+    name: "Zapier Homepage",
     shadow: "0px 2px 10px rgba(0, 0, 0, 0.2)",
     border: " 1px solid #e6e6e6",
   },
   {
-    name: "Auth0 homepage",
+    name: "Auth0 Homepage",
     shadow:
       "rgba(0, 0, 0, 0.05) 0px 0.1rem 0.3rem, rgba(0, 0, 0, 0.05) 0px 0.1rem 0.2rem, rgba(0, 0, 0, 0.05) 0px 0.5rem 1.5rem",
     border: "0",
   },
   {
-    name: "Hacktoberfest infobox",
+    name: "Hacktoberfest Infobox",
     shadow: "0px 50px 100px rgba(0,0,0,0.2)",
     border: "0",
   },
   {
-    name: "Slack homepage",
+    name: "Slack Homepage",
     shadow: "0 1rem 2rem rgba(0,0,0,.1)",
     border: "0",
   },
   {
-    name: "Stackoverflow signup",
+    name: "Stackoverflow SignUp",
     shadow: "inset 0 1px 0 #66bfff",
     border: "1px solid #07c",
   },
   {
-    name: "CallOfDuty homepage button",
+    name: "CallOfDuty Homepage button",
     shadow: "inset 0px 0px 5px #81898c",
     border: "1px solid #81898c",
   },
@@ -382,13 +382,13 @@ const shadows = [
     border: "1px solid #bbb",
   },
   {
-    name: "LinkedIn signin",
+    name: "LinkedIn SignIn",
     shadow:
       "inset 0 0 0 1px #0073b1, inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 1px rgba(0,0,0,0)",
     border: "0",
   },
   {
-    name: "Facebook signUp",
+    name: "Facebook SignUp",
     shadow: "inset 0 1px 1px #a4e388",
     border: "1px solid",
   },
@@ -400,7 +400,12 @@ const shadows = [
   {
     name: "Bing Searchbar",
     shadow: "0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18)",
-    border: "1px solid transparent",
+    border: "0",
+  },
+  {
+    "name": "Dribbble Searchbox",
+    "shadow": "0px 8px 20px rgba(0,0,0,0.06)",
+    "border": "0"
   },
   {
     name: "Soft Neumorphism",
@@ -408,7 +413,7 @@ const shadows = [
     border: "0",
   },
   {
-    name: "Neon pink Glowing component",
+    name: "Neon pink",
     shadow: "0 20px 50px rgba(240, 46, 170, 0.7)",
     border: "0",
   },
@@ -439,6 +444,16 @@ const shadows = [
     name: "Digital Ocean box",
     shadow: "0 2px 4px rgba(1,14,40,.05);",
     border: "1px solid #e5e5e5"
+  },
+  {
+    name: "Paper Shadow",
+    shadow: "inset 5px 5px 50px -10px rgba(158,155,158,0.15)",
+    border: "50px",
+  },
+  {
+    "name": "Github MarketPlace Card",
+    "shadow": "0 4px 10px 1px rgba(0,0,0,.2)",
+    "border": "0"
   },
 ];
 export default shadows;
