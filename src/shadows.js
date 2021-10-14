@@ -399,7 +399,12 @@ const shadows = [
   {
     name: "Bing Searchbar",
     shadow: "0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18)",
-    border: "1px solid transparent",
+    border: "0",
+  },
+  {
+    "name": "Dribbble Searchbox",
+    "shadow": "0px 8px 20px rgba(0,0,0,0.06)",
+    "border": "0"
   },
   {
     name: "Soft Neumorphism",
@@ -433,6 +438,6 @@ const shadows = [
     name: "Starbucks",
     shadow: "0 11px 15px 0 rgba(0, 0, 0, 0.1), 0 9px 46px 8px rgba(0, 0, 0, 0.06), 0 24px 38px 3px rgba(0, 0, 0, 0.07)",
     border: "1.5px solid rgba(0, 0, 0, .12)"
-  }
+  },
 ];
 export default shadows;
