@@ -465,5 +465,10 @@ const shadows = [
     "shadow": "0 4px 10px 1px rgba(0,0,0,.2)",
     "border": "0"
   },
+  {
+    "name": "Zomato Search",
+    "shadow": "rgba(28, 28, 28, 0.08) 0px 2px 8px",
+    "border": "1px solid rgb(232, 232, 232)"
+  },
 ];
 export default shadows;
