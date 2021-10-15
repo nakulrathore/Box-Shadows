@@ -466,5 +466,10 @@ const shadows = [
     shadow: "rgba(28, 28, 28, 0.08) 0px 2px 8px",
     border: "1px solid rgb(232, 232, 232)",
   },
+  {
+    "name": "Postman",
+    "shadow": "1px solid rgba(151, 151, 151, 0.34)",
+    "border": "10px"
+  },
 ];
 export default shadows;
