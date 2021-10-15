@@ -9,6 +9,7 @@ import shadows from "./shadows";
 import PageFooter from "./components/PageFooter/PageFooter";
 import ColorList from "./components/ColorList/ColorList";
 import ColorPicker from "./components/ColorPicker";
+import InsetFilter from "./components/InsetFilter";
 
 import githubIcon from "./assets/github_icon.png";
 
@@ -18,7 +19,8 @@ class App extends Component {
     picker: {
       enabled: false,
       position: { x: 0, y: 0 }
-    }
+    },
+    showInsetOnly: false
   };
 
   handleOnChangeBackground = (value, togglePicker = false) => {
@@ -60,17 +62,24 @@ class App extends Component {
   };
 
   render() {
-    const { background } = this.state;
+    const { background, showInsetOnly } = this.state;
     document.body.style.backgroundColor = background;
 
     const isDarkBackground = Color(background).isDark();
 
     return (
       <div>
+        <InsetFilter onChange={(value) => this.setState({showInsetOnly: value})}/>
+
         <Title isDarkBackground={Color(background).isDark()} />
         <GoogleBar />
         <div className="app">
-          {this.sortByName(this.tagDuplicate(shadows), "asc").map((anObjectMapped, index) => {
+          {this.sortByName(this.tagDuplicate(shadows), "asc").filter(shadowObj => {
+            if (showInsetOnly) {
+              return shadowObj.shadow.includes("inset")
+            }
+            return true
+          }).map((anObjectMapped, index) => {
             return (
               <Bloc
                 shadow={anObjectMapped.shadow}
