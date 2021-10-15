@@ -1,5 +1,4 @@
 const shadows = [
-
   {
     name: "Google docs",
     shadow: "0 0 0 0.75pt #d1d1d1, 0 0 3pt 0.75pt #ccc",
@@ -108,11 +107,6 @@ const shadows = [
   {
     name: "Simple Material UI Button",
     shadow: "0 2px 5px 0 rgba(0, 0, 0, 0.225)",
-    border: "0",
-  },
-  {
-    name: "A Nice Simple Shadow",
-    shadow: "0px 17px 10px -10px rgba(0,0,0,0.4)",
     border: "0",
   },
   {
@@ -337,7 +331,7 @@ const shadows = [
   },
   {
     name: "Youtube Search",
-    shadow: "rgbargba(0, 0, 0, 0) 0px 1px 2px 0px inset",
+    shadow: "rgba(0, 0, 0, 0) 0px 1px 2px 0px inset",
     border: "1px solid rgb(204, 204, 204)",
   },
   {
@@ -403,9 +397,9 @@ const shadows = [
     border: "0",
   },
   {
-    "name": "Dribbble Searchbox",
-    "shadow": "0px 8px 20px rgba(0,0,0,0.06)",
-    "border": "0"
+    name: "Dribbble Searchbox",
+    shadow: "0px 8px 20px rgba(0,0,0,0.06)",
+    border: "0",
   },
   {
     name: "Soft Neumorphism",
@@ -437,23 +431,25 @@ const shadows = [
   },
   {
     name: "Starbucks",
-    shadow: "0 11px 15px 0 rgba(0, 0, 0, 0.1), 0 9px 46px 8px rgba(0, 0, 0, 0.06), 0 24px 38px 3px rgba(0, 0, 0, 0.07)",
-    border: "1.5px solid rgba(0, 0, 0, .12)"
+    shadow:
+      "0 11px 15px 0 rgba(0, 0, 0, 0.1), 0 9px 46px 8px rgba(0, 0, 0, 0.06), 0 24px 38px 3px rgba(0, 0, 0, 0.07)",
+    border: "1.5px solid rgba(0, 0, 0, .12)",
   },
   {
     name: "Disney +",
     shadow: "rgb(0 0 0 / 50%) 0px 0px 18px 0px)",
-    border: "1px solid rgba(151, 151, 151, 0.34)"
+    border: "1px solid rgba(151, 151, 151, 0.34)",
   },
-   {
+  {
     name: "Magherrita",
-    shadow: "11px 11px 0 0 rgba(0, 0, 0, 0.9), 9px 9px 0 8px rgba(0, 0, 0, 0.06), 24px 24px 0 3px rgba(0, 0, 0, 0.09)",
-    border: "2px solid rgba(255,255,0,0.8)"
+    shadow:
+      "11px 11px 0 0 rgba(0, 0, 0, 0.9), 9px 9px 0 8px rgba(0, 0, 0, 0.06), 24px 24px 0 3px rgba(0, 0, 0, 0.09)",
+    border: "2px solid rgba(255,255,0,0.8)",
   },
   {
     name: "Digital Ocean box",
     shadow: "0 2px 4px rgba(1,14,40,.05);",
-    border: "1px solid #e5e5e5"
+    border: "1px solid #e5e5e5",
   },
   {
     name: "Paper Shadow",
@@ -461,14 +457,14 @@ const shadows = [
     border: "50px",
   },
   {
-    "name": "Github MarketPlace Card",
-    "shadow": "0 4px 10px 1px rgba(0,0,0,.2)",
-    "border": "0"
+    name: "Github MarketPlace Card",
+    shadow: "0 4px 10px 1px rgba(0,0,0,.2)",
+    border: "0",
   },
   {
-    "name": "Zomato Search",
-    "shadow": "rgba(28, 28, 28, 0.08) 0px 2px 8px",
-    "border": "1px solid rgb(232, 232, 232)"
+    name: "Zomato Search",
+    shadow: "rgba(28, 28, 28, 0.08) 0px 2px 8px",
+    border: "1px solid rgb(232, 232, 232)",
   },
 ];
 export default shadows;
