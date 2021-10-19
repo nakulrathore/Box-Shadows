@@ -466,5 +466,10 @@ const shadows = [
     shadow: "rgba(28, 28, 28, 0.08) 0px 2px 8px",
     border: "1px solid rgb(232, 232, 232)",
   },
+   {
+    name: "NPM Website",
+    shadow: "0 0 4px 2px rgb(0 0 0 / 20%)",
+    border: "0",
+  },
 ];
 export default shadows;
