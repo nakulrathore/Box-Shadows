@@ -21,8 +21,6 @@ header {
       15px 15px rgba(52, 73, 94, 0.2), 20px 20px rgba(52, 73, 94, 0.1),
       25px 25px rgba(52, 73, 94, 0.05);
     border-radius: 2px;
-    
-    color: transparent;
   }
 
   h2 {
@@ -44,7 +42,8 @@ header {
     border-radius: 2px;
     // box-shadow: 0 2px 4px rgba(1, 14, 40, 0.05);
     border: 1px solid #e5e5e5;
-    box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.09);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.09);
 
     &:hover {
       background-color: #eee;
