@@ -1,0 +1,46 @@
+.shadow-cards-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .shadow-card {
+    width: 300px;
+    height: 220px;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+
+    &:hover {
+      button.copy-code-button {
+        opacity: 1;
+      }
+    }
+    .shadow-name {
+      font-size: 16px;
+      font-weight: 300;
+    }
+    button.copy-code-button {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid #e5e5e5;
+      cursor: pointer;
+      font-weight: 300;
+      background-color: transparent;
+      width: max-content;
+      &.copied {
+        background-color: #9be8bc;
+        color: #444;
+        border-color: transparent;
+      }
+    }
+  }
+}

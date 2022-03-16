@@ -1,0 +1,59 @@
+header {
+  text-align: center;
+  h1.logo {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* letter-spacing: 1.1px; */
+    font-weight: 500;
+    justify-content: center;
+    margin: 10px auto 30px auto;
+    // font-weight: bold;
+    /* font-weight: 600; */
+    border: 5px solid rgba(52, 73, 94, 1);
+    box-shadow: 5px 5px rgba(52, 73, 94, 0.4), 10px 10px rgba(52, 73, 94, 0.3),
+      15px 15px rgba(52, 73, 94, 0.2), 20px 20px rgba(52, 73, 94, 0.1),
+      25px 25px rgba(52, 73, 94, 0.05);
+    border-radius: 2px;
+    
+    color: transparent;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .add-new-button {
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #444;
+    font-weight: 300;
+    width: max-content;
+    margin: 0 auto;
+    padding: 5px 20px;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+    // box-shadow: 0 2px 4px rgba(1, 14, 40, 0.05);
+    border: 1px solid #e5e5e5;
+    box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.09);
+
+    &:hover {
+      background-color: #eee;
+    }
+    .github-icon {
+      height: 20px;
+      width: 20px;
+      vertical-align: bottom;
+      margin-right: 5px;
+    }
+  }
+}
